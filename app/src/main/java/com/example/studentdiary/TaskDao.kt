@@ -17,4 +17,12 @@ interface TaskDao {
 
     @Delete
     suspend fun delete(task: TaskEntity)
+
+    // Добавьте этот метод ↓ (выборка задач по дате)
+    @Query("""
+    SELECT * FROM tasks 
+    WHERE dueDate BETWEEN :startOfDay AND :endOfDay 
+    ORDER BY id ASC
+""")
+    fun getTasksByDate(startOfDay: Long, endOfDay: Long): Flow<List<TaskEntity>>
 }

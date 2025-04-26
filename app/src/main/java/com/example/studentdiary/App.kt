@@ -1,3 +1,5 @@
+package com.example.studentdiary
+
 import android.app.Application
 import androidx.room.Room
 

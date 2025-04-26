@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <!-- Основной цвет -->
+    <color name="colorPrimary">#3F51B5</color>
+
+    <!-- Цвет текста -->
+    <color name="primary_text">#212121</color>
+
+    <!-- Дополнительные цвета для календаря -->
+    <color name="calendar_date_highlight">#FF4081</color>
+    <color name="calendar_weekday_text">#757575</color>
 </resources>
