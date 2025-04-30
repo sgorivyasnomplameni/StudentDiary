@@ -7,7 +7,7 @@
     <!-- Список целей -->
     <fragment
         android:id="@+id/goalsListFragment"
-        android:name="com.example.studentdiary.GoalsListFragment"
+        android:name="com.example.studentdiary.ui.fragments.GoalsListFragment"
         android:label="Список целей"
         tools:layout="@layout/fragment_goals_list">
         <action
@@ -24,7 +24,7 @@
     <!-- Детальный экран цели -->
     <fragment
         android:id="@+id/globalGoalFragment"
-        android:name="com.example.studentdiary.GlobalGoalFragment"
+        android:name="com.example.studentdiary.ui.fragments.GlobalGoalFragment"
         android:label="Детальная цель"
         tools:layout="@layout/fragment_global_goal">
         <action
@@ -38,7 +38,7 @@
     <!-- Фрагмент подцелей -->
     <fragment
         android:id="@+id/subGoalFragment"
-        android:name="com.example.studentdiary.SubGoalFragment"
+        android:name="com.example.studentdiary.ui.fragments.SubGoalFragment"
         android:label="Подцели"
         tools:layout="@layout/fragment_sub_goal">
         <action
@@ -49,7 +49,7 @@
     <!-- Список задач -->
     <fragment
         android:id="@+id/taskListFragment"
-        android:name="com.example.studentdiary.TaskListFragment"
+        android:name="com.example.studentdiary.ui.fragments.TaskListFragment"
         android:label="Список задач"
         tools:layout="@layout/fragment_task_list">
         <action

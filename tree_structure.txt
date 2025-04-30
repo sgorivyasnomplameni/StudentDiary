@@ -1,0 +1,2158 @@
+Ñòðóêòóðà ïàïîê
+Ñåðèéíûé íîìåð òîìà: D8CC-5895
+C:.
+¦   .gitignore
+¦   build.gradle.kts
+¦   gradle.properties
+¦   gradlew
+¦   gradlew.bat
+¦   local.properties
+¦   settings.gradle.kts
+¦   tree_structure.txt
+¦   
++---.gradle
+¦   ¦   config.properties
+¦   ¦   file-system.probe
+¦   ¦   
+¦   +---8.10.2
+¦   ¦   ¦   gc.properties
+¦   ¦   ¦   
+¦   ¦   +---checksums
+¦   ¦   ¦       checksums.lock
+¦   ¦   ¦       md5-checksums.bin
+¦   ¦   ¦       sha1-checksums.bin
+¦   ¦   ¦       
+¦   ¦   +---dependencies-accessors
+¦   ¦   ¦   ¦   gc.properties
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---0c5bedc35a38754f3eea97703fb7921ba3c9dd3e
+¦   ¦   ¦   ¦   ¦   metadata.bin
+¦   ¦   ¦   ¦   ¦   
+¦   ¦   ¦   ¦   +---classes
+¦   ¦   ¦   ¦   ¦   L---org
+¦   ¦   ¦   ¦   ¦       L---gradle
+¦   ¦   ¦   ¦   ¦           L---accessors
+¦   ¦   ¦   ¦   ¦               L---dm
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$AndroidPluginAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$AndroidxCoreLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$AndroidxEspressoLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$AndroidxLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$AndroidxLifecycleLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$AndroidxLifecycleLivedataLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$AndroidxLifecycleViewmodelLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$AndroidxRoomLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$BundleAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$KotlinPluginAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$KotlinxCoroutinesLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$KotlinxLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$PluginAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$VersionAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$AndroidPluginAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$AndroidxCoreLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$AndroidxEspressoLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$AndroidxLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$AndroidxLifecycleLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$AndroidxLifecycleLivedataLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$AndroidxLifecycleViewmodelLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$AndroidxRoomLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$BundleAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$KotlinPluginAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$KotlinxCoroutinesLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$KotlinxLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$PluginAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$VersionAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock.class
+¦   ¦   ¦   ¦   ¦                       
+¦   ¦   ¦   ¦   L---sources
+¦   ¦   ¦   ¦       L---org
+¦   ¦   ¦   ¦           L---gradle
+¦   ¦   ¦   ¦               L---accessors
+¦   ¦   ¦   ¦                   L---dm
+¦   ¦   ¦   ¦                           LibrariesForLibs.java
+¦   ¦   ¦   ¦                           LibrariesForLibsInPluginsBlock.java
+¦   ¦   ¦   ¦                           
+¦   ¦   ¦   +---53b2b197be9de522fbb53afbaab920572120434c
+¦   ¦   ¦   ¦   ¦   metadata.bin
+¦   ¦   ¦   ¦   ¦   
+¦   ¦   ¦   ¦   +---classes
+¦   ¦   ¦   ¦   ¦   L---org
+¦   ¦   ¦   ¦   ¦       L---gradle
+¦   ¦   ¦   ¦   ¦           L---accessors
+¦   ¦   ¦   ¦   ¦               L---dm
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$AndroidPluginAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$AndroidxEspressoLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$AndroidxLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$AndroidxRoomLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$BundleAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$KotlinPluginAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$PluginAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$VersionAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$AndroidPluginAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$AndroidxEspressoLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$AndroidxLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$AndroidxRoomLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$BundleAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$KotlinPluginAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$PluginAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$VersionAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock.class
+¦   ¦   ¦   ¦   ¦                       
+¦   ¦   ¦   ¦   L---sources
+¦   ¦   ¦   ¦       L---org
+¦   ¦   ¦   ¦           L---gradle
+¦   ¦   ¦   ¦               L---accessors
+¦   ¦   ¦   ¦                   L---dm
+¦   ¦   ¦   ¦                           LibrariesForLibs.java
+¦   ¦   ¦   ¦                           LibrariesForLibsInPluginsBlock.java
+¦   ¦   ¦   ¦                           
+¦   ¦   ¦   +---8162449570827244ad024aec6ad38d7cfa8c48b3
+¦   ¦   ¦   ¦   ¦   metadata.bin
+¦   ¦   ¦   ¦   ¦   
+¦   ¦   ¦   ¦   +---classes
+¦   ¦   ¦   ¦   ¦   L---org
+¦   ¦   ¦   ¦   ¦       L---gradle
+¦   ¦   ¦   ¦   ¦           L---accessors
+¦   ¦   ¦   ¦   ¦               L---dm
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$AndroidPluginAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$AndroidxCoreLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$AndroidxEspressoLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$AndroidxLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$AndroidxRoomLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$BundleAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$KotlinPluginAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$PluginAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$RoomLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$VersionAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$AndroidPluginAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$AndroidxCoreLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$AndroidxEspressoLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$AndroidxLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$AndroidxRoomLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$BundleAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$KotlinPluginAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$PluginAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$RoomLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$VersionAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock.class
+¦   ¦   ¦   ¦   ¦                       
+¦   ¦   ¦   ¦   L---sources
+¦   ¦   ¦   ¦       L---org
+¦   ¦   ¦   ¦           L---gradle
+¦   ¦   ¦   ¦               L---accessors
+¦   ¦   ¦   ¦                   L---dm
+¦   ¦   ¦   ¦                           LibrariesForLibs.java
+¦   ¦   ¦   ¦                           LibrariesForLibsInPluginsBlock.java
+¦   ¦   ¦   ¦                           
+¦   ¦   ¦   +---8670fadd4e8c725d08a534b06e48bdc997f2b98a
+¦   ¦   ¦   ¦   ¦   metadata.bin
+¦   ¦   ¦   ¦   ¦   
+¦   ¦   ¦   ¦   +---classes
+¦   ¦   ¦   ¦   ¦   L---org
+¦   ¦   ¦   ¦   ¦       L---gradle
+¦   ¦   ¦   ¦   ¦           L---accessors
+¦   ¦   ¦   ¦   ¦               L---dm
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$AndroidPluginAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$AndroidxCoreLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$AndroidxEspressoLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$AndroidxLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$AndroidxRoomLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$BundleAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$KotlinPluginAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$PluginAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$VersionAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$AndroidPluginAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$AndroidxCoreLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$AndroidxEspressoLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$AndroidxLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$AndroidxRoomLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$BundleAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$KotlinPluginAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$PluginAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$VersionAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock.class
+¦   ¦   ¦   ¦   ¦                       
+¦   ¦   ¦   ¦   L---sources
+¦   ¦   ¦   ¦       L---org
+¦   ¦   ¦   ¦           L---gradle
+¦   ¦   ¦   ¦               L---accessors
+¦   ¦   ¦   ¦                   L---dm
+¦   ¦   ¦   ¦                           LibrariesForLibs.java
+¦   ¦   ¦   ¦                           LibrariesForLibsInPluginsBlock.java
+¦   ¦   ¦   ¦                           
+¦   ¦   ¦   +---8801bb96190a7e231d31f86c0358a51f2a962e4a
+¦   ¦   ¦   ¦   ¦   metadata.bin
+¦   ¦   ¦   ¦   ¦   
+¦   ¦   ¦   ¦   +---classes
+¦   ¦   ¦   ¦   ¦   L---org
+¦   ¦   ¦   ¦   ¦       L---gradle
+¦   ¦   ¦   ¦   ¦           L---accessors
+¦   ¦   ¦   ¦   ¦               L---dm
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$AndroidPluginAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$AndroidxCoreLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$AndroidxEspressoLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$AndroidxLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$AndroidxRoomLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$BundleAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$KotlinPluginAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$PluginAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$VersionAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$AndroidPluginAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$AndroidxCoreLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$AndroidxEspressoLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$AndroidxLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$AndroidxRoomLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$BundleAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$KotlinPluginAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$PluginAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$VersionAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock.class
+¦   ¦   ¦   ¦   ¦                       
+¦   ¦   ¦   ¦   L---sources
+¦   ¦   ¦   ¦       L---org
+¦   ¦   ¦   ¦           L---gradle
+¦   ¦   ¦   ¦               L---accessors
+¦   ¦   ¦   ¦                   L---dm
+¦   ¦   ¦   ¦                           LibrariesForLibs.java
+¦   ¦   ¦   ¦                           LibrariesForLibsInPluginsBlock.java
+¦   ¦   ¦   ¦                           
+¦   ¦   ¦   +---9ee26883f6c40247a0c796db912c35e1cad4aec1
+¦   ¦   ¦   ¦   ¦   metadata.bin
+¦   ¦   ¦   ¦   ¦   
+¦   ¦   ¦   ¦   +---classes
+¦   ¦   ¦   ¦   ¦   L---org
+¦   ¦   ¦   ¦   ¦       L---gradle
+¦   ¦   ¦   ¦   ¦           L---accessors
+¦   ¦   ¦   ¦   ¦               L---dm
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$AndroidPluginAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$AndroidxCoreLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$AndroidxEspressoLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$AndroidxLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$AndroidxRoomLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$BundleAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$KotlinPluginAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$PluginAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$VersionAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$AndroidPluginAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$AndroidxCoreLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$AndroidxEspressoLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$AndroidxLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$AndroidxRoomLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$BundleAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$KotlinPluginAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$PluginAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$VersionAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock.class
+¦   ¦   ¦   ¦   ¦                       
+¦   ¦   ¦   ¦   L---sources
+¦   ¦   ¦   ¦       L---org
+¦   ¦   ¦   ¦           L---gradle
+¦   ¦   ¦   ¦               L---accessors
+¦   ¦   ¦   ¦                   L---dm
+¦   ¦   ¦   ¦                           LibrariesForLibs.java
+¦   ¦   ¦   ¦                           LibrariesForLibsInPluginsBlock.java
+¦   ¦   ¦   ¦                           
+¦   ¦   ¦   +---a3f4cc2d5202a24b65b904ddb540a786ab3cb3fb
+¦   ¦   ¦   ¦   ¦   metadata.bin
+¦   ¦   ¦   ¦   ¦   
+¦   ¦   ¦   ¦   +---classes
+¦   ¦   ¦   ¦   ¦   L---org
+¦   ¦   ¦   ¦   ¦       L---gradle
+¦   ¦   ¦   ¦   ¦           L---accessors
+¦   ¦   ¦   ¦   ¦               L---dm
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$AndroidPluginAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$AndroidxConstraintlayoutLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$AndroidxCoreLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$AndroidxEspressoLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$AndroidxLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$AndroidxLifecycleLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$AndroidxLifecycleLivedataLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$AndroidxLifecycleViewmodelLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$AndroidxRoomLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$BundleAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$KotlinPluginAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$KotlinxCoroutinesLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$KotlinxLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$PluginAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$VersionAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$AndroidPluginAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$AndroidxConstraintlayoutLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$AndroidxCoreLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$AndroidxEspressoLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$AndroidxLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$AndroidxLifecycleLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$AndroidxLifecycleLivedataLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$AndroidxLifecycleViewmodelLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$AndroidxRoomLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$BundleAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$KotlinPluginAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$KotlinxCoroutinesLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$KotlinxLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$PluginAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$VersionAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock.class
+¦   ¦   ¦   ¦   ¦                       
+¦   ¦   ¦   ¦   L---sources
+¦   ¦   ¦   ¦       L---org
+¦   ¦   ¦   ¦           L---gradle
+¦   ¦   ¦   ¦               L---accessors
+¦   ¦   ¦   ¦                   L---dm
+¦   ¦   ¦   ¦                           LibrariesForLibs.java
+¦   ¦   ¦   ¦                           LibrariesForLibsInPluginsBlock.java
+¦   ¦   ¦   ¦                           
+¦   ¦   ¦   +---d4b6d22156583c8b7b55c4fd04fbb4c58c762f42
+¦   ¦   ¦   ¦   ¦   metadata.bin
+¦   ¦   ¦   ¦   ¦   
+¦   ¦   ¦   ¦   +---classes
+¦   ¦   ¦   ¦   ¦   L---org
+¦   ¦   ¦   ¦   ¦       L---gradle
+¦   ¦   ¦   ¦   ¦           L---accessors
+¦   ¦   ¦   ¦   ¦               L---dm
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$AndroidPluginAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$AndroidxCoreLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$AndroidxEspressoLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$AndroidxLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$BundleAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$KotlinPluginAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$PluginAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$VersionAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$AndroidPluginAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$AndroidxCoreLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$AndroidxEspressoLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$AndroidxLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$BundleAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$KotlinPluginAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$PluginAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$VersionAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock.class
+¦   ¦   ¦   ¦   ¦                       
+¦   ¦   ¦   ¦   L---sources
+¦   ¦   ¦   ¦       L---org
+¦   ¦   ¦   ¦           L---gradle
+¦   ¦   ¦   ¦               L---accessors
+¦   ¦   ¦   ¦                   L---dm
+¦   ¦   ¦   ¦                           LibrariesForLibs.java
+¦   ¦   ¦   ¦                           LibrariesForLibsInPluginsBlock.java
+¦   ¦   ¦   ¦                           
+¦   ¦   ¦   +---e4e6c101288dea093bd20604bfd56ae2caf53d82
+¦   ¦   ¦   ¦   ¦   metadata.bin
+¦   ¦   ¦   ¦   ¦   
+¦   ¦   ¦   ¦   +---classes
+¦   ¦   ¦   ¦   ¦   L---org
+¦   ¦   ¦   ¦   ¦       L---gradle
+¦   ¦   ¦   ¦   ¦           L---accessors
+¦   ¦   ¦   ¦   ¦               L---dm
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$AndroidPluginAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$AndroidxEspressoLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$AndroidxLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$AndroidxRoomLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$BundleAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$KotlinPluginAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$PluginAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs$VersionAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibs.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$AndroidPluginAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$AndroidxEspressoLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$AndroidxLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$AndroidxRoomLibraryAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$BundleAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$KotlinPluginAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$PluginAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock$VersionAccessors.class
+¦   ¦   ¦   ¦   ¦                       LibrariesForLibsInPluginsBlock.class
+¦   ¦   ¦   ¦   ¦                       
+¦   ¦   ¦   ¦   L---sources
+¦   ¦   ¦   ¦       L---org
+¦   ¦   ¦   ¦           L---gradle
+¦   ¦   ¦   ¦               L---accessors
+¦   ¦   ¦   ¦                   L---dm
+¦   ¦   ¦   ¦                           LibrariesForLibs.java
+¦   ¦   ¦   ¦                           LibrariesForLibsInPluginsBlock.java
+¦   ¦   ¦   ¦                           
+¦   ¦   ¦   L---f28256c0023cd5136a8f7c63b817b2e42a7d5062
+¦   ¦   ¦       ¦   metadata.bin
+¦   ¦   ¦       ¦   
+¦   ¦   ¦       +---classes
+¦   ¦   ¦       ¦   L---org
+¦   ¦   ¦       ¦       L---gradle
+¦   ¦   ¦       ¦           L---accessors
+¦   ¦   ¦       ¦               L---dm
+¦   ¦   ¦       ¦                       LibrariesForLibs$AndroidPluginAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibs$AndroidxCoreLibraryAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibs$AndroidxEspressoLibraryAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibs$AndroidxLibraryAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibs$AndroidxRoomLibraryAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibs$BundleAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibs$KotlinPluginAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibs$PluginAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibs$VersionAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibs.class
+¦   ¦   ¦       ¦                       LibrariesForLibsInPluginsBlock$AndroidPluginAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibsInPluginsBlock$AndroidxCoreLibraryAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibsInPluginsBlock$AndroidxEspressoLibraryAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibsInPluginsBlock$AndroidxLibraryAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibsInPluginsBlock$AndroidxRoomLibraryAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibsInPluginsBlock$BundleAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibsInPluginsBlock$KotlinPluginAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibsInPluginsBlock$PluginAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibsInPluginsBlock$VersionAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibsInPluginsBlock.class
+¦   ¦   ¦       ¦                       
+¦   ¦   ¦       L---sources
+¦   ¦   ¦           L---org
+¦   ¦   ¦               L---gradle
+¦   ¦   ¦                   L---accessors
+¦   ¦   ¦                       L---dm
+¦   ¦   ¦                               LibrariesForLibs.java
+¦   ¦   ¦                               LibrariesForLibsInPluginsBlock.java
+¦   ¦   ¦                               
+¦   ¦   +---executionHistory
+¦   ¦   ¦       executionHistory.bin
+¦   ¦   ¦       executionHistory.lock
+¦   ¦   ¦       
+¦   ¦   +---expanded
+¦   ¦   +---fileChanges
+¦   ¦   ¦       last-build.bin
+¦   ¦   ¦       
+¦   ¦   +---fileHashes
+¦   ¦   ¦       fileHashes.bin
+¦   ¦   ¦       fileHashes.lock
+¦   ¦   ¦       resourceHashesCache.bin
+¦   ¦   ¦       
+¦   ¦   L---vcsMetadata
+¦   +---buildOutputCleanup
+¦   ¦       buildOutputCleanup.lock
+¦   ¦       cache.properties
+¦   ¦       outputFiles.bin
+¦   ¦       
+¦   +---kotlin
+¦   ¦   +---errors
+¦   ¦   L---sessions
+¦   L---vcs-1
+¦           gc.properties
+¦           
++---.idea
+¦   ¦   .gitignore
+¦   ¦   compiler.xml
+¦   ¦   deploymentTargetSelector.xml
+¦   ¦   gradle.xml
+¦   ¦   kotlinc.xml
+¦   ¦   migrations.xml
+¦   ¦   misc.xml
+¦   ¦   navEditor.xml
+¦   ¦   runConfigurations.xml
+¦   ¦   vcs.xml
+¦   ¦   workspace.xml
+¦   ¦   
+¦   +---caches
+¦   ¦       deviceStreaming.xml
+¦   ¦       
+¦   L---modules
+¦       L---app
++---.kotlin
+¦   L---sessions
++---app
+¦   ¦   .gitignore
+¦   ¦   build.gradle.kts
+¦   ¦   proguard-rules.pro
+¦   ¦   
+¦   +---build
+¦   ¦   +---generated
+¦   ¦   ¦   +---ap_generated_sources
+¦   ¦   ¦   ¦   L---debug
+¦   ¦   ¦   ¦       L---out
+¦   ¦   ¦   +---res
+¦   ¦   ¦   ¦   +---pngs
+¦   ¦   ¦   ¦   ¦   L---debug
+¦   ¦   ¦   ¦   ¦       L---drawable-anydpi-v24
+¦   ¦   ¦   ¦   ¦               ic_launcher_foreground.xml
+¦   ¦   ¦   ¦   ¦               
+¦   ¦   ¦   ¦   L---resValues
+¦   ¦   ¦   ¦       +---androidTest
+¦   ¦   ¦   ¦       ¦   L---debug
+¦   ¦   ¦   ¦       L---debug
+¦   ¦   ¦   L---source
+¦   ¦   ¦       +---kapt
+¦   ¦   ¦       ¦   L---debug
+¦   ¦   ¦       ¦       L---com
+¦   ¦   ¦       ¦           L---example
+¦   ¦   ¦       ¦               L---studentdiary
+¦   ¦   ¦       ¦                       AppDatabase_Impl.java
+¦   ¦   ¦       ¦                       GoalDao_Impl.java
+¦   ¦   ¦       ¦                       TaskDao_Impl.java
+¦   ¦   ¦       ¦                       
+¦   ¦   ¦       +---kaptKotlin
+¦   ¦   ¦       ¦   L---debug
+¦   ¦   ¦       L---navigation-args
+¦   ¦   ¦           L---debug
+¦   ¦   ¦               L---com
+¦   ¦   ¦                   L---example
+¦   ¦   ¦                       L---studentdiary
+¦   ¦   ¦                               CalendarFragmentDirections.kt
+¦   ¦   ¦                               GlobalGoalFragmentDirections.kt
+¦   ¦   ¦                               GoalsListFragmentDirections.kt
+¦   ¦   ¦                               SubGoalFragmentDirections.kt
+¦   ¦   ¦                               TaskListFragmentDirections.kt
+¦   ¦   ¦                               
+¦   ¦   +---intermediates
+¦   ¦   ¦   +---aar_metadata_check
+¦   ¦   ¦   ¦   +---debug
+¦   ¦   ¦   ¦   ¦   L---checkDebugAarMetadata
+¦   ¦   ¦   ¦   L---debugAndroidTest
+¦   ¦   ¦   ¦       L---checkDebugAndroidTestAarMetadata
+¦   ¦   ¦   +---annotation_processor_list
+¦   ¦   ¦   ¦   +---debug
+¦   ¦   ¦   ¦   ¦   L---javaPreCompileDebug
+¦   ¦   ¦   ¦   ¦           annotationProcessors.json
+¦   ¦   ¦   ¦   ¦           
+¦   ¦   ¦   ¦   +---debugAndroidTest
+¦   ¦   ¦   ¦   ¦   L---javaPreCompileDebugAndroidTest
+¦   ¦   ¦   ¦   ¦           annotationProcessors.json
+¦   ¦   ¦   ¦   ¦           
+¦   ¦   ¦   ¦   L---debugUnitTest
+¦   ¦   ¦   ¦       L---javaPreCompileDebugUnitTest
+¦   ¦   ¦   ¦               annotationProcessors.json
+¦   ¦   ¦   ¦               
+¦   ¦   ¦   +---apk
+¦   ¦   ¦   ¦   L---debug
+¦   ¦   ¦   ¦           app-debug.apk
+¦   ¦   ¦   ¦           output-metadata.json
+¦   ¦   ¦   ¦           
+¦   ¦   ¦   +---apk_ide_redirect_file
+¦   ¦   ¦   ¦   L---debug
+¦   ¦   ¦   ¦       L---createDebugApkListingFileRedirect
+¦   ¦   ¦   ¦               redirect.txt
+¦   ¦   ¦   ¦               
+¦   ¦   ¦   +---app_metadata
+¦   ¦   ¦   ¦   L---debug
+¦   ¦   ¦   ¦       L---writeDebugAppMetadata
+¦   ¦   ¦   ¦               app-metadata.properties
+¦   ¦   ¦   ¦               
+¦   ¦   ¦   +---assets
+¦   ¦   ¦   ¦   +---debug
+¦   ¦   ¦   ¦   ¦   L---mergeDebugAssets
+¦   ¦   ¦   ¦   L---debugAndroidTest
+¦   ¦   ¦   ¦       L---mergeDebugAndroidTestAssets
+¦   ¦   ¦   +---compatible_screen_manifest
+¦   ¦   ¦   ¦   L---debug
+¦   ¦   ¦   ¦       L---createDebugCompatibleScreenManifests
+¦   ¦   ¦   ¦               output-metadata.json
+¦   ¦   ¦   ¦               
+¦   ¦   ¦   +---compile_and_runtime_not_namespaced_r_class_jar
+¦   ¦   ¦   ¦   +---debug
+¦   ¦   ¦   ¦   ¦   L---processDebugResources
+¦   ¦   ¦   ¦   ¦           R.jar
+¦   ¦   ¦   ¦   ¦           
+¦   ¦   ¦   ¦   L---debugAndroidTest
+¦   ¦   ¦   ¦       L---processDebugAndroidTestResources
+¦   ¦   ¦   ¦               R.jar
+¦   ¦   ¦   ¦               
+¦   ¦   ¦   +---compressed_assets
+¦   ¦   ¦   ¦   +---debug
+¦   ¦   ¦   ¦   ¦   L---compressDebugAssets
+¦   ¦   ¦   ¦   ¦       L---out
+¦   ¦   ¦   ¦   L---debugAndroidTest
+¦   ¦   ¦   ¦       L---compressDebugAndroidTestAssets
+¦   ¦   ¦   ¦           L---out
+¦   ¦   ¦   +---data_binding_layout_info_type_merge
+¦   ¦   ¦   ¦   +---debug
+¦   ¦   ¦   ¦   ¦   L---mergeDebugResources
+¦   ¦   ¦   ¦   ¦       L---out
+¦   ¦   ¦   ¦   L---debugAndroidTest
+¦   ¦   ¦   ¦       L---mergeDebugAndroidTestResources
+¦   ¦   ¦   ¦           L---out
+¦   ¦   ¦   +---data_binding_layout_info_type_package
+¦   ¦   ¦   ¦   L---debug
+¦   ¦   ¦   ¦       L---packageDebugResources
+¦   ¦   ¦   ¦           L---out
+¦   ¦   ¦   +---desugar_graph
+¦   ¦   ¦   ¦   L---debug
+¦   ¦   ¦   ¦       L---dexBuilderDebug
+¦   ¦   ¦   ¦           L---out
+¦   ¦   ¦   ¦               +---currentProject
+¦   ¦   ¦   ¦               ¦   +---dirs_bucket_0
+¦   ¦   ¦   ¦               ¦   ¦       graph.bin
+¦   ¦   ¦   ¦               ¦   ¦       
+¦   ¦   ¦   ¦               ¦   +---dirs_bucket_1
+¦   ¦   ¦   ¦               ¦   ¦       graph.bin
+¦   ¦   ¦   ¦               ¦   ¦       
+¦   ¦   ¦   ¦               ¦   +---dirs_bucket_2
+¦   ¦   ¦   ¦               ¦   ¦       graph.bin
+¦   ¦   ¦   ¦               ¦   ¦       
+¦   ¦   ¦   ¦               ¦   +---dirs_bucket_3
+¦   ¦   ¦   ¦               ¦   ¦       graph.bin
+¦   ¦   ¦   ¦               ¦   ¦       
+¦   ¦   ¦   ¦               ¦   +---dirs_bucket_4
+¦   ¦   ¦   ¦               ¦   ¦       graph.bin
+¦   ¦   ¦   ¦               ¦   ¦       
+¦   ¦   ¦   ¦               ¦   +---dirs_bucket_5
+¦   ¦   ¦   ¦               ¦   ¦       graph.bin
+¦   ¦   ¦   ¦               ¦   ¦       
+¦   ¦   ¦   ¦               ¦   +---jar_69fba2facbaa05d62ef3b3fd00e21a011ec64a335640f80358ff07767e095761_bucket_0
+¦   ¦   ¦   ¦               ¦   ¦       graph.bin
+¦   ¦   ¦   ¦               ¦   ¦       
+¦   ¦   ¦   ¦               ¦   +---jar_69fba2facbaa05d62ef3b3fd00e21a011ec64a335640f80358ff07767e095761_bucket_1
+¦   ¦   ¦   ¦               ¦   ¦       graph.bin
+¦   ¦   ¦   ¦               ¦   ¦       
+¦   ¦   ¦   ¦               ¦   +---jar_69fba2facbaa05d62ef3b3fd00e21a011ec64a335640f80358ff07767e095761_bucket_2
+¦   ¦   ¦   ¦               ¦   ¦       graph.bin
+¦   ¦   ¦   ¦               ¦   ¦       
+¦   ¦   ¦   ¦               ¦   +---jar_69fba2facbaa05d62ef3b3fd00e21a011ec64a335640f80358ff07767e095761_bucket_3
+¦   ¦   ¦   ¦               ¦   ¦       graph.bin
+¦   ¦   ¦   ¦               ¦   ¦       
+¦   ¦   ¦   ¦               ¦   +---jar_69fba2facbaa05d62ef3b3fd00e21a011ec64a335640f80358ff07767e095761_bucket_4
+¦   ¦   ¦   ¦               ¦   ¦       graph.bin
+¦   ¦   ¦   ¦               ¦   ¦       
+¦   ¦   ¦   ¦               ¦   L---jar_69fba2facbaa05d62ef3b3fd00e21a011ec64a335640f80358ff07767e095761_bucket_5
+¦   ¦   ¦   ¦               ¦           graph.bin
+¦   ¦   ¦   ¦               ¦           
+¦   ¦   ¦   ¦               +---externalLibs
+¦   ¦   ¦   ¦               +---mixedScopes
+¦   ¦   ¦   ¦               L---otherProjects
+¦   ¦   ¦   +---dex
+¦   ¦   ¦   ¦   +---debug
+¦   ¦   ¦   ¦   ¦   +---mergeExtDexDebug
+¦   ¦   ¦   ¦   ¦   ¦       classes.dex
+¦   ¦   ¦   ¦   ¦   ¦       classes2.dex
+¦   ¦   ¦   ¦   ¦   ¦       
+¦   ¦   ¦   ¦   ¦   +---mergeLibDexDebug
+¦   ¦   ¦   ¦   ¦   ¦   +---0
+¦   ¦   ¦   ¦   ¦   ¦   +---1
+¦   ¦   ¦   ¦   ¦   ¦   +---10
+¦   ¦   ¦   ¦   ¦   ¦   +---11
+¦   ¦   ¦   ¦   ¦   ¦   +---12
+¦   ¦   ¦   ¦   ¦   ¦   +---13
+¦   ¦   ¦   ¦   ¦   ¦   +---14
+¦   ¦   ¦   ¦   ¦   ¦   +---15
+¦   ¦   ¦   ¦   ¦   ¦   +---2
+¦   ¦   ¦   ¦   ¦   ¦   +---3
+¦   ¦   ¦   ¦   ¦   ¦   +---4
+¦   ¦   ¦   ¦   ¦   ¦   +---5
+¦   ¦   ¦   ¦   ¦   ¦   +---6
+¦   ¦   ¦   ¦   ¦   ¦   +---7
+¦   ¦   ¦   ¦   ¦   ¦   +---8
+¦   ¦   ¦   ¦   ¦   ¦   L---9
+¦   ¦   ¦   ¦   ¦   L---mergeProjectDexDebug
+¦   ¦   ¦   ¦   ¦       +---0
+¦   ¦   ¦   ¦   ¦       ¦       classes.dex
+¦   ¦   ¦   ¦   ¦       ¦       
+¦   ¦   ¦   ¦   ¦       +---1
+¦   ¦   ¦   ¦   ¦       +---10
+¦   ¦   ¦   ¦   ¦       +---11
+¦   ¦   ¦   ¦   ¦       +---12
+¦   ¦   ¦   ¦   ¦       +---13
+¦   ¦   ¦   ¦   ¦       +---14
+¦   ¦   ¦   ¦   ¦       ¦       classes.dex
+¦   ¦   ¦   ¦   ¦       ¦       
+¦   ¦   ¦   ¦   ¦       +---15
+¦   ¦   ¦   ¦   ¦       +---2
+¦   ¦   ¦   ¦   ¦       +---3
+¦   ¦   ¦   ¦   ¦       +---4
+¦   ¦   ¦   ¦   ¦       +---5
+¦   ¦   ¦   ¦   ¦       +---6
+¦   ¦   ¦   ¦   ¦       +---7
+¦   ¦   ¦   ¦   ¦       +---8
+¦   ¦   ¦   ¦   ¦       L---9
+¦   ¦   ¦   ¦   L---debugAndroidTest
+¦   ¦   ¦   ¦       +---mergeExtDexDebugAndroidTest
+¦   ¦   ¦   ¦       ¦       classes.dex
+¦   ¦   ¦   ¦       ¦       
+¦   ¦   ¦   ¦       L---mergeLibDexDebugAndroidTest
+¦   ¦   ¦   ¦           +---0
+¦   ¦   ¦   ¦           +---1
+¦   ¦   ¦   ¦           +---10
+¦   ¦   ¦   ¦           +---11
+¦   ¦   ¦   ¦           +---12
+¦   ¦   ¦   ¦           +---13
+¦   ¦   ¦   ¦           +---14
+¦   ¦   ¦   ¦           +---15
+¦   ¦   ¦   ¦           +---2
+¦   ¦   ¦   ¦           +---3
+¦   ¦   ¦   ¦           +---4
+¦   ¦   ¦   ¦           +---5
+¦   ¦   ¦   ¦           +---6
+¦   ¦   ¦   ¦           +---7
+¦   ¦   ¦   ¦           +---8
+¦   ¦   ¦   ¦           L---9
+¦   ¦   ¦   +---dex_archive_input_jar_hashes
+¦   ¦   ¦   ¦   L---debug
+¦   ¦   ¦   ¦       L---dexBuilderDebug
+¦   ¦   ¦   ¦               out
+¦   ¦   ¦   ¦               
+¦   ¦   ¦   +---dex_number_of_buckets_file
+¦   ¦   ¦   ¦   L---debug
+¦   ¦   ¦   ¦       L---dexBuilderDebug
+¦   ¦   ¦   ¦               out
+¦   ¦   ¦   ¦               
+¦   ¦   ¦   +---duplicate_classes_check
+¦   ¦   ¦   ¦   +---debug
+¦   ¦   ¦   ¦   ¦   L---checkDebugDuplicateClasses
+¦   ¦   ¦   ¦   L---debugAndroidTest
+¦   ¦   ¦   ¦       L---checkDebugAndroidTestDuplicateClasses
+¦   ¦   ¦   +---external_file_lib_dex_archives
+¦   ¦   ¦   ¦   +---debug
+¦   ¦   ¦   ¦   ¦   L---desugarDebugFileDependencies
+¦   ¦   ¦   ¦   L---debugAndroidTest
+¦   ¦   ¦   ¦       L---desugarDebugAndroidTestFileDependencies
+¦   ¦   ¦   +---external_libs_dex_archive
+¦   ¦   ¦   ¦   L---debug
+¦   ¦   ¦   ¦       L---dexBuilderDebug
+¦   ¦   ¦   ¦           L---out
+¦   ¦   ¦   +---external_libs_dex_archive_with_artifact_transforms
+¦   ¦   ¦   ¦   L---debug
+¦   ¦   ¦   ¦       L---dexBuilderDebug
+¦   ¦   ¦   ¦           L---out
+¦   ¦   ¦   +---incremental
+¦   ¦   ¦   ¦   +---debug
+¦   ¦   ¦   ¦   ¦   +---mergeDebugResources
+¦   ¦   ¦   ¦   ¦   ¦   ¦   compile-file-map.properties
+¦   ¦   ¦   ¦   ¦   ¦   ¦   merger.xml
+¦   ¦   ¦   ¦   ¦   ¦   ¦   
+¦   ¦   ¦   ¦   ¦   ¦   +---merged.dir
+¦   ¦   ¦   ¦   ¦   ¦   L---stripped.dir
+¦   ¦   ¦   ¦   ¦   L---packageDebugResources
+¦   ¦   ¦   ¦   ¦       ¦   compile-file-map.properties
+¦   ¦   ¦   ¦   ¦       ¦   merger.xml
+¦   ¦   ¦   ¦   ¦       ¦   
+¦   ¦   ¦   ¦   ¦       +---merged.dir
+¦   ¦   ¦   ¦   ¦       L---stripped.dir
+¦   ¦   ¦   ¦   +---debug-mergeJavaRes
+¦   ¦   ¦   ¦   ¦   ¦   merge-state
+¦   ¦   ¦   ¦   ¦   ¦   
+¦   ¦   ¦   ¦   ¦   L---zip-cache
+¦   ¦   ¦   ¦   ¦           +e8Mb0FG6cU+EFcKPCG30kpUygQ=
+¦   ¦   ¦   ¦   ¦           +Klfx4YHF8Cz_dqvi_Lc0yRf_yk=
+¦   ¦   ¦   ¦   ¦           1FKwqAgCJY9zMCLMg+j3mJTQrms=
+¦   ¦   ¦   ¦   ¦           1n559dxCC2h4_rtkQOBEFI1RXWw=
+¦   ¦   ¦   ¦   ¦           2iSjM8q2hzCKUsOUHlHiZGJ+nqo=
+¦   ¦   ¦   ¦   ¦           3+MPKkGUfyKK4zB5tChPx7vj7Jk=
+¦   ¦   ¦   ¦   ¦           33k3EXxYsLtCyQmCcxURAhiZdgM=
+¦   ¦   ¦   ¦   ¦           3Fqjvfjp_gybQscX82fGYa9cJP0=
+¦   ¦   ¦   ¦   ¦           3MC7dSNvXPv_0DZaJn8Z6a8XtsU=
+¦   ¦   ¦   ¦   ¦           3ysMNKclzstALaDbBxbsJiJS5IU=
+¦   ¦   ¦   ¦   ¦           4hVIs+bjKMDjaILGIsGOSmRD3ZQ=
+¦   ¦   ¦   ¦   ¦           4mnj4j6i5SMDs_qXT+YJoe2zBbE=
+¦   ¦   ¦   ¦   ¦           4XOp8ZWKTqz3MRoRQTs5SYdHOyU=
+¦   ¦   ¦   ¦   ¦           5blI37qiyvHtpOPNqp+H2FEXgrw=
+¦   ¦   ¦   ¦   ¦           5bNpycjFJ1x_Fm0Lmz7AqaM9ALc=
+¦   ¦   ¦   ¦   ¦           5xldnaskyYdlJgfKtuk9vvKDlN8=
+¦   ¦   ¦   ¦   ¦           77zwnPSlFlVGU26KAsIxOE9CINM=
+¦   ¦   ¦   ¦   ¦           7KKaiU8JvAWhMC7WaiiBe6cPGeA=
+¦   ¦   ¦   ¦   ¦           7_ju4tA4UsehEn6dFFlUWN5QiCs=
+¦   ¦   ¦   ¦   ¦           A5OVR8gwEt8nIlZIL096eQSOWg4=
+¦   ¦   ¦   ¦   ¦           ACDsXLcTiMKkj48GXA3Q9ZeYg+w=
+¦   ¦   ¦   ¦   ¦           acfA3dzmiePjonVFlRR2VZ4IzYQ=
+¦   ¦   ¦   ¦   ¦           AFyDBlpYwccM412pWfSTBkt08l4=
+¦   ¦   ¦   ¦   ¦           aOs8YxbmGGU2L_fmu8cBb3X5X2Y=
+¦   ¦   ¦   ¦   ¦           Awfu8_er7xgLTDZdU3lmir+Uh3Q=
+¦   ¦   ¦   ¦   ¦           BVuY3vUQknLqnrQkOnbIJZzQ+yM=
+¦   ¦   ¦   ¦   ¦           BXJxc34_m6ivAP_A49GDyLhHIVw=
+¦   ¦   ¦   ¦   ¦           C01h3gx6_qSEuAh8hz4+Jzkd4TQ=
+¦   ¦   ¦   ¦   ¦           Cs_ROjtEcgw1I+U3RC5cU345CBM=
+¦   ¦   ¦   ¦   ¦           C_P4lmUYk5JCr0W8NmwQ7sB0pSU=
+¦   ¦   ¦   ¦   ¦           DdqMx+aXIsaC6VvDdrIUMyJAFwg=
+¦   ¦   ¦   ¦   ¦           eKcwNpl1qGRhsD4gAGMW+I_7YNY=
+¦   ¦   ¦   ¦   ¦           F+u9Qi5WH6nkaYWrgjILbXciEPc=
+¦   ¦   ¦   ¦   ¦           fCp8yNIhbplWi9gIdB56IznHsVo=
+¦   ¦   ¦   ¦   ¦           fLaNeYbVsuFduYceI5whCrVA7HI=
+¦   ¦   ¦   ¦   ¦           gfbhneZzVJvTOS3Ic8QpLYs92_o=
+¦   ¦   ¦   ¦   ¦           HGyrs9X3g2mt1mS8S6gQfnsghWc=
+¦   ¦   ¦   ¦   ¦           HLlDeBnNVjcRSchh0zAX+jcuCVk=
+¦   ¦   ¦   ¦   ¦           htiqR1CsUUfvMQuU5Bb0SrT1iaY=
+¦   ¦   ¦   ¦   ¦           iJzde0Zx3sFq2dZfg8_m0jufW0A=
+¦   ¦   ¦   ¦   ¦           Il0iWvFBfv+h4UKZACCwU55ZnZA=
+¦   ¦   ¦   ¦   ¦           iXYu3ld5lWrBf+4XPcY7pDvY5Wc=
+¦   ¦   ¦   ¦   ¦           J_AI7AlgokggStHHj8qu2QDDgfs=
+¦   ¦   ¦   ¦   ¦           l5fORlQclUFPG49Dfq543BYB1CY=
+¦   ¦   ¦   ¦   ¦           LEt7dU_J_i47uZOMYJtl67+JT_U=
+¦   ¦   ¦   ¦   ¦           lj4w0hFZCccc3RtXSW18ytHV5l8=
+¦   ¦   ¦   ¦   ¦           LulFJpzH_ze9JoEqSocmGnbsdCo=
+¦   ¦   ¦   ¦   ¦           MPyK_pgTiEDlRoDJ5f8YirvvPec=
+¦   ¦   ¦   ¦   ¦           ms2Y_FEVtqf0k+KjqDDb3tGBpAI=
+¦   ¦   ¦   ¦   ¦           ncug1LiQhx53TFnhdXkBBysFx+Q=
+¦   ¦   ¦   ¦   ¦           niPs0ML0tyfJifK6M5Ds9cXKnWk=
+¦   ¦   ¦   ¦   ¦           nZA0ArRcMy552xMLzYUOqaPDV_Q=
+¦   ¦   ¦   ¦   ¦           oXJAyKgqqMwKgUmSCkVdvqS5Cyw=
+¦   ¦   ¦   ¦   ¦           P44IFzgiHSxUW3JtxahruXVfyuo=
+¦   ¦   ¦   ¦   ¦           pHFAuiEXIBsdbHt0_S4o2ui5XCI=
+¦   ¦   ¦   ¦   ¦           PNQQOi4Sw5UOylrvb8qOgO2zU88=
+¦   ¦   ¦   ¦   ¦           pNU6JyJuvFHGXmy2ljyHDRPHuBg=
+¦   ¦   ¦   ¦   ¦           qfNKuiy4Y7kszKEjNEqMUhfHk2k=
+¦   ¦   ¦   ¦   ¦           qjs3Rpy8wZhskYH+5sR0F4cnP6c=
+¦   ¦   ¦   ¦   ¦           qKdMgdRMWl3Lp6tr9S6VOrpAgbc=
+¦   ¦   ¦   ¦   ¦           rBYoxIa51M5Nh0bbPBateTjbULQ=
+¦   ¦   ¦   ¦   ¦           rK+989gOrrp2RDiK0qqwy13plXg=
+¦   ¦   ¦   ¦   ¦           s8kbXH3GqKxPMp8x0DeqVUTSR+A=
+¦   ¦   ¦   ¦   ¦           sl3HmVgU9AzV_bYyA5jdm7NREwo=
+¦   ¦   ¦   ¦   ¦           SxoF12bHDlF6V0Tzr2peDwUtN7c=
+¦   ¦   ¦   ¦   ¦           Tc6fsti5UgcwyVgFL65yAuYeJZk=
+¦   ¦   ¦   ¦   ¦           u7tJPlcXihrTRIqamlkcTFAXSLQ=
+¦   ¦   ¦   ¦   ¦           uaQmGmasVCX0WcDJcjIbP1xJOy8=
+¦   ¦   ¦   ¦   ¦           V+JY8GDb6EhhSCH2+VUu2DWC4l8=
+¦   ¦   ¦   ¦   ¦           Vii3pnyYPjScrq5n_tMFRO7ZjaA=
+¦   ¦   ¦   ¦   ¦           vVDX+Otpws7R0_EAt+Nds6VZ9tk=
+¦   ¦   ¦   ¦   ¦           wqxu8_2m9m+kbWxNQGIRya5FEiA=
+¦   ¦   ¦   ¦   ¦           x1_vDaa2c1fb9plXUpzWRty0RLc=
+¦   ¦   ¦   ¦   ¦           xggpkzY7ylwPerDkduAcG20AFlY=
+¦   ¦   ¦   ¦   ¦           XMzEnlBFNMwsXEsxaXTNb64acV4=
+¦   ¦   ¦   ¦   ¦           y5oXVF5l6WGjytRiKK26O+Rfd2E=
+¦   ¦   ¦   ¦   ¦           Ydg2Jdbo_gjEI9j_2Bk7pfeJ3fU=
+¦   ¦   ¦   ¦   ¦           YHvKXu_pzXGTHd6rZ8gvq6JILO8=
+¦   ¦   ¦   ¦   ¦           Yo5815oefGSWF9BSUrRrXZqrTMA=
+¦   ¦   ¦   ¦   ¦           ZCrRj39X8g_zEG0pMpwwl+8oBew=
+¦   ¦   ¦   ¦   ¦           zeYgr+eAqjx5xUpHaXoYxzuaXmY=
+¦   ¦   ¦   ¦   ¦           zrXooG+oJ+CfUY4lmza96pWQCYQ=
+¦   ¦   ¦   ¦   ¦           ZtLTYYYrfOgcJAIei_syzcBag3w=
+¦   ¦   ¦   ¦   ¦           
+¦   ¦   ¦   ¦   +---debugAndroidTest
+¦   ¦   ¦   ¦   ¦   L---mergeDebugAndroidTestResources
+¦   ¦   ¦   ¦   ¦       ¦   compile-file-map.properties
+¦   ¦   ¦   ¦   ¦       ¦   merger.xml
+¦   ¦   ¦   ¦   ¦       ¦   
+¦   ¦   ¦   ¦   ¦       +---merged.dir
+¦   ¦   ¦   ¦   ¦       ¦   +---values
+¦   ¦   ¦   ¦   ¦       ¦   ¦       values.xml
+¦   ¦   ¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦   ¦   ¦       ¦   +---values-v18
+¦   ¦   ¦   ¦   ¦       ¦   ¦       values-v18.xml
+¦   ¦   ¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦   ¦   ¦       ¦   +---values-v21
+¦   ¦   ¦   ¦   ¦       ¦   ¦       values-v21.xml
+¦   ¦   ¦   ¦   ¦       ¦   ¦       
+¦   ¦   ¦   ¦   ¦       ¦   L---values-v28
+¦   ¦   ¦   ¦   ¦       ¦           values-v28.xml
+¦   ¦   ¦   ¦   ¦       ¦           
+¦   ¦   ¦   ¦   ¦       L---stripped.dir
+¦   ¦   ¦   ¦   +---generateSafeArgsDebug
+¦   ¦   ¦   ¦   ¦       file_mappings.json
+¦   ¦   ¦   ¦   ¦       
+¦   ¦   ¦   ¦   +---mergeDebugAndroidTestAssets
+¦   ¦   ¦   ¦   ¦       merger.xml
+¦   ¦   ¦   ¦   ¦       
+¦   ¦   ¦   ¦   +---mergeDebugAndroidTestJniLibFolders
+¦   ¦   ¦   ¦   ¦       merger.xml
+¦   ¦   ¦   ¦   ¦       
+¦   ¦   ¦   ¦   +---mergeDebugAndroidTestShaders
+¦   ¦   ¦   ¦   ¦       merger.xml
+¦   ¦   ¦   ¦   ¦       
+¦   ¦   ¦   ¦   +---mergeDebugAssets
+¦   ¦   ¦   ¦   ¦       merger.xml
+¦   ¦   ¦   ¦   ¦       
+¦   ¦   ¦   ¦   +---mergeDebugJniLibFolders
+¦   ¦   ¦   ¦   ¦       merger.xml
+¦   ¦   ¦   ¦   ¦       
+¦   ¦   ¦   ¦   +---mergeDebugShaders
+¦   ¦   ¦   ¦   ¦       merger.xml
+¦   ¦   ¦   ¦   ¦       
+¦   ¦   ¦   ¦   +---packageDebug
+¦   ¦   ¦   ¦   ¦   L---tmp
+¦   ¦   ¦   ¦   ¦       L---debug
+¦   ¦   ¦   ¦   ¦           ¦   dex-renamer-state.txt
+¦   ¦   ¦   ¦   ¦           ¦   
+¦   ¦   ¦   ¦   ¦           L---zip-cache
+¦   ¦   ¦   ¦   ¦                   androidResources
+¦   ¦   ¦   ¦   ¦                   javaResources0
+¦   ¦   ¦   ¦   ¦                   
+¦   ¦   ¦   ¦   L---processDebugResources
+¦   ¦   ¦   ¦           resources-list-for-linked-resources-binary-format-debug.ap_.txt
+¦   ¦   ¦   ¦           
+¦   ¦   ¦   +---javac
+¦   ¦   ¦   ¦   L---debug
+¦   ¦   ¦   ¦       L---compileDebugJavaWithJavac
+¦   ¦   ¦   ¦           L---classes
+¦   ¦   ¦   ¦               L---com
+¦   ¦   ¦   ¦                   L---example
+¦   ¦   ¦   ¦                       L---studentdiary
+¦   ¦   ¦   ¦                               AppDatabase_Impl$1.class
+¦   ¦   ¦   ¦                               AppDatabase_Impl.class
+¦   ¦   ¦   ¦                               GoalDao_Impl$1.class
+¦   ¦   ¦   ¦                               GoalDao_Impl$2.class
+¦   ¦   ¦   ¦                               GoalDao_Impl$3.class
+¦   ¦   ¦   ¦                               GoalDao_Impl.class
+¦   ¦   ¦   ¦                               TaskDao_Impl$1.class
+¦   ¦   ¦   ¦                               TaskDao_Impl$2.class
+¦   ¦   ¦   ¦                               TaskDao_Impl.class
+¦   ¦   ¦   ¦                               
+¦   ¦   ¦   +---java_res
+¦   ¦   ¦   ¦   L---debug
+¦   ¦   ¦   ¦       L---processDebugJavaRes
+¦   ¦   ¦   ¦           L---out
+¦   ¦   ¦   ¦               +---com
+¦   ¦   ¦   ¦               ¦   L---example
+¦   ¦   ¦   ¦               ¦       L---studentdiary
+¦   ¦   ¦   ¦               L---META-INF
+¦   ¦   ¦   ¦                       app_debug.kotlin_module
+¦   ¦   ¦   ¦                       
+¦   ¦   ¦   +---linked_resources_binary_format
+¦   ¦   ¦   ¦   +---debug
+¦   ¦   ¦   ¦   ¦   L---processDebugResources
+¦   ¦   ¦   ¦   ¦           linked-resources-binary-format-debug.ap_
+¦   ¦   ¦   ¦   ¦           output-metadata.json
+¦   ¦   ¦   ¦   ¦           
+¦   ¦   ¦   ¦   L---debugAndroidTest
+¦   ¦   ¦   ¦       L---processDebugAndroidTestResources
+¦   ¦   ¦   ¦               linked-resources-binary-format.ap_
+¦   ¦   ¦   ¦               output-metadata.json
+¦   ¦   ¦   ¦               
+¦   ¦   ¦   +---local_only_symbol_list
+¦   ¦   ¦   ¦   L---debug
+¦   ¦   ¦   ¦       L---parseDebugLocalResources
+¦   ¦   ¦   ¦               R-def.txt
+¦   ¦   ¦   ¦               
+¦   ¦   ¦   +---manifest_merge_blame_file
+¦   ¦   ¦   ¦   +---debug
+¦   ¦   ¦   ¦   ¦   L---processDebugMainManifest
+¦   ¦   ¦   ¦   ¦           manifest-merger-blame-debug-report.txt
+¦   ¦   ¦   ¦   ¦           
+¦   ¦   ¦   ¦   L---debugAndroidTest
+¦   ¦   ¦   ¦       L---processDebugAndroidTestManifest
+¦   ¦   ¦   ¦               manifest-merger-blame-debug-androidTest-report.txt
+¦   ¦   ¦   ¦               
+¦   ¦   ¦   +---merged_java_res
+¦   ¦   ¦   ¦   L---debug
+¦   ¦   ¦   ¦       L---mergeDebugJavaResource
+¦   ¦   ¦   ¦               base.jar
+¦   ¦   ¦   ¦               
+¦   ¦   ¦   +---merged_jni_libs
+¦   ¦   ¦   ¦   +---debug
+¦   ¦   ¦   ¦   ¦   L---mergeDebugJniLibFolders
+¦   ¦   ¦   ¦   ¦       L---out
+¦   ¦   ¦   ¦   L---debugAndroidTest
+¦   ¦   ¦   ¦       L---mergeDebugAndroidTestJniLibFolders
+¦   ¦   ¦   ¦           L---out
+¦   ¦   ¦   +---merged_manifest
+¦   ¦   ¦   ¦   L---debug
+¦   ¦   ¦   ¦       L---processDebugMainManifest
+¦   ¦   ¦   ¦               AndroidManifest.xml
+¦   ¦   ¦   ¦               
+¦   ¦   ¦   +---merged_manifests
+¦   ¦   ¦   ¦   L---debug
+¦   ¦   ¦   ¦       L---processDebugManifest
+¦   ¦   ¦   ¦               AndroidManifest.xml
+¦   ¦   ¦   ¦               output-metadata.json
+¦   ¦   ¦   ¦               
+¦   ¦   ¦   +---merged_res
+¦   ¦   ¦   ¦   +---debug
+¦   ¦   ¦   ¦   ¦   L---mergeDebugResources
+¦   ¦   ¦   ¦   ¦           drawable-anydpi-v24_ic_launcher_foreground.xml.flat
+¦   ¦   ¦   ¦   ¦           drawable_addknopka.png.flat
+¦   ¦   ¦   ¦   ¦           drawable_alarm.png.flat
+¦   ¦   ¦   ¦   ¦           drawable_calendar.png.flat
+¦   ¦   ¦   ¦   ¦           drawable_complete.png.flat
+¦   ¦   ¦   ¦   ¦           drawable_goal.png.flat
+¦   ¦   ¦   ¦   ¦           drawable_ic_launcher_background.xml.flat
+¦   ¦   ¦   ¦   ¦           drawable_item_background.xml.flat
+¦   ¦   ¦   ¦   ¦           drawable_task.png.flat
+¦   ¦   ¦   ¦   ¦           layout_activity_add_task.xml.flat
+¦   ¦   ¦   ¦   ¦           layout_activity_calendar.xml.flat
+¦   ¦   ¦   ¦   ¦           layout_activity_main.xml.flat
+¦   ¦   ¦   ¦   ¦           layout_activity_task_detail.xml.flat
+¦   ¦   ¦   ¦   ¦           layout_dialog_add_goal.xml.flat
+¦   ¦   ¦   ¦   ¦           layout_dialog_edit_goal.xml.flat
+¦   ¦   ¦   ¦   ¦           layout_dialog_update_progress.xml.flat
+¦   ¦   ¦   ¦   ¦           layout_fragment_edit_goal_dialog.xml.flat
+¦   ¦   ¦   ¦   ¦           layout_fragment_global_goal.xml.flat
+¦   ¦   ¦   ¦   ¦           layout_fragment_goals_list.xml.flat
+¦   ¦   ¦   ¦   ¦           layout_fragment_sub_goal.xml.flat
+¦   ¦   ¦   ¦   ¦           layout_fragment_task_list.xml.flat
+¦   ¦   ¦   ¦   ¦           layout_item_goal.xml.flat
+¦   ¦   ¦   ¦   ¦           layout_item_sub_goal.xml.flat
+¦   ¦   ¦   ¦   ¦           layout_item_task.xml.flat
+¦   ¦   ¦   ¦   ¦           menu_bottom_nav_menu.xml.flat
+¦   ¦   ¦   ¦   ¦           mipmap-anydpi-v26_ic_launcher.xml.flat
+¦   ¦   ¦   ¦   ¦           mipmap-anydpi-v26_ic_launcher_round.xml.flat
+¦   ¦   ¦   ¦   ¦           mipmap-hdpi_ic_launcher.webp.flat
+¦   ¦   ¦   ¦   ¦           mipmap-hdpi_ic_launcher_round.webp.flat
+¦   ¦   ¦   ¦   ¦           mipmap-mdpi_ic_launcher.webp.flat
+¦   ¦   ¦   ¦   ¦           mipmap-mdpi_ic_launcher_round.webp.flat
+¦   ¦   ¦   ¦   ¦           mipmap-xhdpi_ic_launcher.webp.flat
+¦   ¦   ¦   ¦   ¦           mipmap-xhdpi_ic_launcher_round.webp.flat
+¦   ¦   ¦   ¦   ¦           mipmap-xxhdpi_ic_launcher.webp.flat
+¦   ¦   ¦   ¦   ¦           mipmap-xxhdpi_ic_launcher_round.webp.flat
+¦   ¦   ¦   ¦   ¦           mipmap-xxxhdpi_ic_launcher.webp.flat
+¦   ¦   ¦   ¦   ¦           mipmap-xxxhdpi_ic_launcher_round.webp.flat
+¦   ¦   ¦   ¦   ¦           navigation_nav_graph.xml.flat
+¦   ¦   ¦   ¦   ¦           values-af_values-af.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-am_values-am.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-ar_values-ar.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-as_values-as.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-az_values-az.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-b+es+419_values-b+es+419.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-b+sr+Latn_values-b+sr+Latn.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-be_values-be.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-bg_values-bg.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-bn_values-bn.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-bs_values-bs.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-ca_values-ca.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-cs_values-cs.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-da_values-da.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-de_values-de.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-el_values-el.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-en-rAU_values-en-rAU.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-en-rCA_values-en-rCA.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-en-rGB_values-en-rGB.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-en-rIN_values-en-rIN.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-en-rXC_values-en-rXC.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-es-rUS_values-es-rUS.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-es_values-es.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-et_values-et.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-eu_values-eu.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-fa_values-fa.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-fi_values-fi.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-fr-rCA_values-fr-rCA.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-fr_values-fr.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-gl_values-gl.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-gu_values-gu.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-h320dp-port-v13_values-h320dp-port-v13.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-h360dp-land-v13_values-h360dp-land-v13.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-h480dp-land-v13_values-h480dp-land-v13.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-h550dp-port-v13_values-h550dp-port-v13.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-h720dp-v13_values-h720dp-v13.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-hdpi-v4_values-hdpi-v4.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-hi_values-hi.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-hr_values-hr.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-hu_values-hu.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-hy_values-hy.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-in_values-in.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-is_values-is.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-it_values-it.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-iw_values-iw.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-ja_values-ja.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-ka_values-ka.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-kk_values-kk.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-km_values-km.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-kn_values-kn.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-ko_values-ko.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-ky_values-ky.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-land_values-land.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-large-v4_values-large-v4.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-ldltr-v21_values-ldltr-v21.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-ldrtl-v17_values-ldrtl-v17.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-lo_values-lo.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-lt_values-lt.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-lv_values-lv.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-mk_values-mk.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-ml_values-ml.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-mn_values-mn.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-mr_values-mr.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-ms_values-ms.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-my_values-my.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-nb_values-nb.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-ne_values-ne.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-night-v8_values-night-v8.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-nl_values-nl.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-or_values-or.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-pa_values-pa.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-pl_values-pl.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-port_values-port.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-pt-rBR_values-pt-rBR.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-pt-rPT_values-pt-rPT.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-pt_values-pt.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-ro_values-ro.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-ru_values-ru.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-si_values-si.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-sk_values-sk.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-sl_values-sl.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-small-v4_values-small-v4.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-sq_values-sq.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-sr_values-sr.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-sv_values-sv.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-sw600dp-v13_values-sw600dp-v13.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-sw_values-sw.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-ta_values-ta.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-te_values-te.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-th_values-th.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-tl_values-tl.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-tr_values-tr.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-uk_values-uk.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-ur_values-ur.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-uz_values-uz.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-v16_values-v16.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-v17_values-v17.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-v18_values-v18.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-v21_values-v21.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-v22_values-v22.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-v23_values-v23.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-v24_values-v24.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-v25_values-v25.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-v26_values-v26.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-v28_values-v28.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-v31_values-v31.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-v34_values-v34.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-vi_values-vi.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-w320dp-land-v13_values-w320dp-land-v13.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-w360dp-port-v13_values-w360dp-port-v13.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-w400dp-port-v13_values-w400dp-port-v13.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-w600dp-land-v13_values-w600dp-land-v13.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-watch-v20_values-watch-v20.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-watch-v21_values-watch-v21.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-xlarge-v4_values-xlarge-v4.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-zh-rCN_values-zh-rCN.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-zh-rHK_values-zh-rHK.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-zh-rTW_values-zh-rTW.arsc.flat
+¦   ¦   ¦   ¦   ¦           values-zu_values-zu.arsc.flat
+¦   ¦   ¦   ¦   ¦           values_values.arsc.flat
+¦   ¦   ¦   ¦   ¦           xml_backup_rules.xml.flat
+¦   ¦   ¦   ¦   ¦           xml_data_extraction_rules.xml.flat
+¦   ¦   ¦   ¦   ¦           
+¦   ¦   ¦   ¦   L---debugAndroidTest
+¦   ¦   ¦   ¦       L---mergeDebugAndroidTestResources
+¦   ¦   ¦   ¦               values-v18_values-v18.arsc.flat
+¦   ¦   ¦   ¦               values-v21_values-v21.arsc.flat
+¦   ¦   ¦   ¦               values-v28_values-v28.arsc.flat
+¦   ¦   ¦   ¦               values_values.arsc.flat
+¦   ¦   ¦   ¦               
+¦   ¦   ¦   +---merged_res_blame_folder
+¦   ¦   ¦   ¦   +---debug
+¦   ¦   ¦   ¦   ¦   L---mergeDebugResources
+¦   ¦   ¦   ¦   ¦       L---out
+¦   ¦   ¦   ¦   ¦           +---multi-v2
+¦   ¦   ¦   ¦   ¦           ¦       mergeDebugResources.json
+¦   ¦   ¦   ¦   ¦           ¦       values-af.json
+¦   ¦   ¦   ¦   ¦           ¦       values-am.json
+¦   ¦   ¦   ¦   ¦           ¦       values-ar.json
+¦   ¦   ¦   ¦   ¦           ¦       values-as.json
+¦   ¦   ¦   ¦   ¦           ¦       values-az.json
+¦   ¦   ¦   ¦   ¦           ¦       values-b+es+419.json
+¦   ¦   ¦   ¦   ¦           ¦       values-b+sr+Latn.json
+¦   ¦   ¦   ¦   ¦           ¦       values-be.json
+¦   ¦   ¦   ¦   ¦           ¦       values-bg.json
+¦   ¦   ¦   ¦   ¦           ¦       values-bn.json
+¦   ¦   ¦   ¦   ¦           ¦       values-bs.json
+¦   ¦   ¦   ¦   ¦           ¦       values-ca.json
+¦   ¦   ¦   ¦   ¦           ¦       values-cs.json
+¦   ¦   ¦   ¦   ¦           ¦       values-da.json
+¦   ¦   ¦   ¦   ¦           ¦       values-de.json
+¦   ¦   ¦   ¦   ¦           ¦       values-el.json
+¦   ¦   ¦   ¦   ¦           ¦       values-en-rAU.json
+¦   ¦   ¦   ¦   ¦           ¦       values-en-rCA.json
+¦   ¦   ¦   ¦   ¦           ¦       values-en-rGB.json
+¦   ¦   ¦   ¦   ¦           ¦       values-en-rIN.json
+¦   ¦   ¦   ¦   ¦           ¦       values-en-rXC.json
+¦   ¦   ¦   ¦   ¦           ¦       values-es-rUS.json
+¦   ¦   ¦   ¦   ¦           ¦       values-es.json
+¦   ¦   ¦   ¦   ¦           ¦       values-et.json
+¦   ¦   ¦   ¦   ¦           ¦       values-eu.json
+¦   ¦   ¦   ¦   ¦           ¦       values-fa.json
+¦   ¦   ¦   ¦   ¦           ¦       values-fi.json
+¦   ¦   ¦   ¦   ¦           ¦       values-fr-rCA.json
+¦   ¦   ¦   ¦   ¦           ¦       values-fr.json
+¦   ¦   ¦   ¦   ¦           ¦       values-gl.json
+¦   ¦   ¦   ¦   ¦           ¦       values-gu.json
+¦   ¦   ¦   ¦   ¦           ¦       values-h320dp-port-v13.json
+¦   ¦   ¦   ¦   ¦           ¦       values-h360dp-land-v13.json
+¦   ¦   ¦   ¦   ¦           ¦       values-h480dp-land-v13.json
+¦   ¦   ¦   ¦   ¦           ¦       values-h550dp-port-v13.json
+¦   ¦   ¦   ¦   ¦           ¦       values-h720dp-v13.json
+¦   ¦   ¦   ¦   ¦           ¦       values-hdpi-v4.json
+¦   ¦   ¦   ¦   ¦           ¦       values-hi.json
+¦   ¦   ¦   ¦   ¦           ¦       values-hr.json
+¦   ¦   ¦   ¦   ¦           ¦       values-hu.json
+¦   ¦   ¦   ¦   ¦           ¦       values-hy.json
+¦   ¦   ¦   ¦   ¦           ¦       values-in.json
+¦   ¦   ¦   ¦   ¦           ¦       values-is.json
+¦   ¦   ¦   ¦   ¦           ¦       values-it.json
+¦   ¦   ¦   ¦   ¦           ¦       values-iw.json
+¦   ¦   ¦   ¦   ¦           ¦       values-ja.json
+¦   ¦   ¦   ¦   ¦           ¦       values-ka.json
+¦   ¦   ¦   ¦   ¦           ¦       values-kk.json
+¦   ¦   ¦   ¦   ¦           ¦       values-km.json
+¦   ¦   ¦   ¦   ¦           ¦       values-kn.json
+¦   ¦   ¦   ¦   ¦           ¦       values-ko.json
+¦   ¦   ¦   ¦   ¦           ¦       values-ky.json
+¦   ¦   ¦   ¦   ¦           ¦       values-land.json
+¦   ¦   ¦   ¦   ¦           ¦       values-large-v4.json
+¦   ¦   ¦   ¦   ¦           ¦       values-ldltr-v21.json
+¦   ¦   ¦   ¦   ¦           ¦       values-ldrtl-v17.json
+¦   ¦   ¦   ¦   ¦           ¦       values-lo.json
+¦   ¦   ¦   ¦   ¦           ¦       values-lt.json
+¦   ¦   ¦   ¦   ¦           ¦       values-lv.json
+¦   ¦   ¦   ¦   ¦           ¦       values-mk.json
+¦   ¦   ¦   ¦   ¦           ¦       values-ml.json
+¦   ¦   ¦   ¦   ¦           ¦       values-mn.json
+¦   ¦   ¦   ¦   ¦           ¦       values-mr.json
+¦   ¦   ¦   ¦   ¦           ¦       values-ms.json
+¦   ¦   ¦   ¦   ¦           ¦       values-my.json
+¦   ¦   ¦   ¦   ¦           ¦       values-nb.json
+¦   ¦   ¦   ¦   ¦           ¦       values-ne.json
+¦   ¦   ¦   ¦   ¦           ¦       values-night-v8.json
+¦   ¦   ¦   ¦   ¦           ¦       values-nl.json
+¦   ¦   ¦   ¦   ¦           ¦       values-or.json
+¦   ¦   ¦   ¦   ¦           ¦       values-pa.json
+¦   ¦   ¦   ¦   ¦           ¦       values-pl.json
+¦   ¦   ¦   ¦   ¦           ¦       values-port.json
+¦   ¦   ¦   ¦   ¦           ¦       values-pt-rBR.json
+¦   ¦   ¦   ¦   ¦           ¦       values-pt-rPT.json
+¦   ¦   ¦   ¦   ¦           ¦       values-pt.json
+¦   ¦   ¦   ¦   ¦           ¦       values-ro.json
+¦   ¦   ¦   ¦   ¦           ¦       values-ru.json
+¦   ¦   ¦   ¦   ¦           ¦       values-si.json
+¦   ¦   ¦   ¦   ¦           ¦       values-sk.json
+¦   ¦   ¦   ¦   ¦           ¦       values-sl.json
+¦   ¦   ¦   ¦   ¦           ¦       values-small-v4.json
+¦   ¦   ¦   ¦   ¦           ¦       values-sq.json
+¦   ¦   ¦   ¦   ¦           ¦       values-sr.json
+¦   ¦   ¦   ¦   ¦           ¦       values-sv.json
+¦   ¦   ¦   ¦   ¦           ¦       values-sw.json
+¦   ¦   ¦   ¦   ¦           ¦       values-sw600dp-v13.json
+¦   ¦   ¦   ¦   ¦           ¦       values-ta.json
+¦   ¦   ¦   ¦   ¦           ¦       values-te.json
+¦   ¦   ¦   ¦   ¦           ¦       values-th.json
+¦   ¦   ¦   ¦   ¦           ¦       values-tl.json
+¦   ¦   ¦   ¦   ¦           ¦       values-tr.json
+¦   ¦   ¦   ¦   ¦           ¦       values-uk.json
+¦   ¦   ¦   ¦   ¦           ¦       values-ur.json
+¦   ¦   ¦   ¦   ¦           ¦       values-uz.json
+¦   ¦   ¦   ¦   ¦           ¦       values-v16.json
+¦   ¦   ¦   ¦   ¦           ¦       values-v17.json
+¦   ¦   ¦   ¦   ¦           ¦       values-v18.json
+¦   ¦   ¦   ¦   ¦           ¦       values-v21.json
+¦   ¦   ¦   ¦   ¦           ¦       values-v22.json
+¦   ¦   ¦   ¦   ¦           ¦       values-v23.json
+¦   ¦   ¦   ¦   ¦           ¦       values-v24.json
+¦   ¦   ¦   ¦   ¦           ¦       values-v25.json
+¦   ¦   ¦   ¦   ¦           ¦       values-v26.json
+¦   ¦   ¦   ¦   ¦           ¦       values-v28.json
+¦   ¦   ¦   ¦   ¦           ¦       values-v31.json
+¦   ¦   ¦   ¦   ¦           ¦       values-v34.json
+¦   ¦   ¦   ¦   ¦           ¦       values-vi.json
+¦   ¦   ¦   ¦   ¦           ¦       values-w320dp-land-v13.json
+¦   ¦   ¦   ¦   ¦           ¦       values-w360dp-port-v13.json
+¦   ¦   ¦   ¦   ¦           ¦       values-w400dp-port-v13.json
+¦   ¦   ¦   ¦   ¦           ¦       values-w600dp-land-v13.json
+¦   ¦   ¦   ¦   ¦           ¦       values-watch-v20.json
+¦   ¦   ¦   ¦   ¦           ¦       values-watch-v21.json
+¦   ¦   ¦   ¦   ¦           ¦       values-xlarge-v4.json
+¦   ¦   ¦   ¦   ¦           ¦       values-zh-rCN.json
+¦   ¦   ¦   ¦   ¦           ¦       values-zh-rHK.json
+¦   ¦   ¦   ¦   ¦           ¦       values-zh-rTW.json
+¦   ¦   ¦   ¦   ¦           ¦       values-zu.json
+¦   ¦   ¦   ¦   ¦           ¦       values.json
+¦   ¦   ¦   ¦   ¦           ¦       
+¦   ¦   ¦   ¦   ¦           L---single
+¦   ¦   ¦   ¦   ¦                   mergeDebugResources.json
+¦   ¦   ¦   ¦   ¦                   
+¦   ¦   ¦   ¦   L---debugAndroidTest
+¦   ¦   ¦   ¦       L---mergeDebugAndroidTestResources
+¦   ¦   ¦   ¦           L---out
+¦   ¦   ¦   ¦               L---multi-v2
+¦   ¦   ¦   ¦                       mergeDebugAndroidTestResources.json
+¦   ¦   ¦   ¦                       values-v18.json
+¦   ¦   ¦   ¦                       values-v21.json
+¦   ¦   ¦   ¦                       values-v28.json
+¦   ¦   ¦   ¦                       values.json
+¦   ¦   ¦   ¦                       
+¦   ¦   ¦   +---merged_shaders
+¦   ¦   ¦   ¦   +---debug
+¦   ¦   ¦   ¦   ¦   L---mergeDebugShaders
+¦   ¦   ¦   ¦   ¦       L---out
+¦   ¦   ¦   ¦   L---debugAndroidTest
+¦   ¦   ¦   ¦       L---mergeDebugAndroidTestShaders
+¦   ¦   ¦   ¦           L---out
+¦   ¦   ¦   +---mixed_scope_dex_archive
+¦   ¦   ¦   ¦   L---debug
+¦   ¦   ¦   ¦       L---dexBuilderDebug
+¦   ¦   ¦   ¦           L---out
+¦   ¦   ¦   +---navigation_json
+¦   ¦   ¦   ¦   L---debug
+¦   ¦   ¦   ¦       L---extractDeepLinksDebug
+¦   ¦   ¦   ¦               navigation.json
+¦   ¦   ¦   ¦               
+¦   ¦   ¦   +---nested_resources_validation_report
+¦   ¦   ¦   ¦   +---debug
+¦   ¦   ¦   ¦   ¦   L---generateDebugResources
+¦   ¦   ¦   ¦   ¦           nestedResourcesValidationReport.txt
+¦   ¦   ¦   ¦   ¦           
+¦   ¦   ¦   ¦   L---debugAndroidTest
+¦   ¦   ¦   ¦       L---generateDebugAndroidTestResources
+¦   ¦   ¦   ¦               nestedResourcesValidationReport.txt
+¦   ¦   ¦   ¦               
+¦   ¦   ¦   +---packaged_manifests
+¦   ¦   ¦   ¦   +---debug
+¦   ¦   ¦   ¦   ¦   L---processDebugManifestForPackage
+¦   ¦   ¦   ¦   ¦           AndroidManifest.xml
+¦   ¦   ¦   ¦   ¦           output-metadata.json
+¦   ¦   ¦   ¦   ¦           
+¦   ¦   ¦   ¦   L---debugAndroidTest
+¦   ¦   ¦   ¦       L---processDebugAndroidTestManifest
+¦   ¦   ¦   ¦               AndroidManifest.xml
+¦   ¦   ¦   ¦               output-metadata.json
+¦   ¦   ¦   ¦               
+¦   ¦   ¦   +---packaged_res
+¦   ¦   ¦   ¦   L---debug
+¦   ¦   ¦   ¦       L---packageDebugResources
+¦   ¦   ¦   ¦           +---drawable
+¦   ¦   ¦   ¦           ¦       addknopka.png
+¦   ¦   ¦   ¦           ¦       alarm.png
+¦   ¦   ¦   ¦           ¦       calendar.png
+¦   ¦   ¦   ¦           ¦       complete.png
+¦   ¦   ¦   ¦           ¦       goal.png
+¦   ¦   ¦   ¦           ¦       ic_launcher_background.xml
+¦   ¦   ¦   ¦           ¦       item_background.xml
+¦   ¦   ¦   ¦           ¦       task.png
+¦   ¦   ¦   ¦           ¦       
+¦   ¦   ¦   ¦           +---drawable-v24
+¦   ¦   ¦   ¦           ¦       ic_launcher_foreground.xml
+¦   ¦   ¦   ¦           ¦       
+¦   ¦   ¦   ¦           +---layout
+¦   ¦   ¦   ¦           ¦       activity_add_task.xml
+¦   ¦   ¦   ¦           ¦       activity_calendar.xml
+¦   ¦   ¦   ¦           ¦       activity_main.xml
+¦   ¦   ¦   ¦           ¦       activity_task_detail.xml
+¦   ¦   ¦   ¦           ¦       dialog_add_goal.xml
+¦   ¦   ¦   ¦           ¦       dialog_edit_goal.xml
+¦   ¦   ¦   ¦           ¦       dialog_update_progress.xml
+¦   ¦   ¦   ¦           ¦       fragment_edit_goal_dialog.xml
+¦   ¦   ¦   ¦           ¦       fragment_global_goal.xml
+¦   ¦   ¦   ¦           ¦       fragment_goals_list.xml
+¦   ¦   ¦   ¦           ¦       fragment_sub_goal.xml
+¦   ¦   ¦   ¦           ¦       fragment_task_list.xml
+¦   ¦   ¦   ¦           ¦       item_goal.xml
+¦   ¦   ¦   ¦           ¦       item_sub_goal.xml
+¦   ¦   ¦   ¦           ¦       item_task.xml
+¦   ¦   ¦   ¦           ¦       
+¦   ¦   ¦   ¦           +---menu
+¦   ¦   ¦   ¦           ¦       bottom_nav_menu.xml
+¦   ¦   ¦   ¦           ¦       
+¦   ¦   ¦   ¦           +---mipmap-anydpi-v26
+¦   ¦   ¦   ¦           ¦       ic_launcher.xml
+¦   ¦   ¦   ¦           ¦       ic_launcher_round.xml
+¦   ¦   ¦   ¦           ¦       
+¦   ¦   ¦   ¦           +---mipmap-hdpi-v4
+¦   ¦   ¦   ¦           ¦       ic_launcher.webp
+¦   ¦   ¦   ¦           ¦       ic_launcher_round.webp
+¦   ¦   ¦   ¦           ¦       
+¦   ¦   ¦   ¦           +---mipmap-mdpi-v4
+¦   ¦   ¦   ¦           ¦       ic_launcher.webp
+¦   ¦   ¦   ¦           ¦       ic_launcher_round.webp
+¦   ¦   ¦   ¦           ¦       
+¦   ¦   ¦   ¦           +---mipmap-xhdpi-v4
+¦   ¦   ¦   ¦           ¦       ic_launcher.webp
+¦   ¦   ¦   ¦           ¦       ic_launcher_round.webp
+¦   ¦   ¦   ¦           ¦       
+¦   ¦   ¦   ¦           +---mipmap-xxhdpi-v4
+¦   ¦   ¦   ¦           ¦       ic_launcher.webp
+¦   ¦   ¦   ¦           ¦       ic_launcher_round.webp
+¦   ¦   ¦   ¦           ¦       
+¦   ¦   ¦   ¦           +---mipmap-xxxhdpi-v4
+¦   ¦   ¦   ¦           ¦       ic_launcher.webp
+¦   ¦   ¦   ¦           ¦       ic_launcher_round.webp
+¦   ¦   ¦   ¦           ¦       
+¦   ¦   ¦   ¦           +---navigation
+¦   ¦   ¦   ¦           ¦       nav_graph.xml
+¦   ¦   ¦   ¦           ¦       
+¦   ¦   ¦   ¦           +---values
+¦   ¦   ¦   ¦           ¦       values.xml
+¦   ¦   ¦   ¦           ¦       
+¦   ¦   ¦   ¦           +---values-night-v8
+¦   ¦   ¦   ¦           ¦       values-night-v8.xml
+¦   ¦   ¦   ¦           ¦       
+¦   ¦   ¦   ¦           L---xml
+¦   ¦   ¦   ¦                   backup_rules.xml
+¦   ¦   ¦   ¦                   data_extraction_rules.xml
+¦   ¦   ¦   ¦                   
+¦   ¦   ¦   +---project_dex_archive
+¦   ¦   ¦   ¦   L---debug
+¦   ¦   ¦   ¦       L---dexBuilderDebug
+¦   ¦   ¦   ¦           L---out
+¦   ¦   ¦   ¦               ¦   4556ad1d2c6cc708f7f7d2bcf5096b0603d66c45de28db158ba1b23011640467_0.jar
+¦   ¦   ¦   ¦               ¦   4556ad1d2c6cc708f7f7d2bcf5096b0603d66c45de28db158ba1b23011640467_1.jar
+¦   ¦   ¦   ¦               ¦   4556ad1d2c6cc708f7f7d2bcf5096b0603d66c45de28db158ba1b23011640467_2.jar
+¦   ¦   ¦   ¦               ¦   4556ad1d2c6cc708f7f7d2bcf5096b0603d66c45de28db158ba1b23011640467_3.jar
+¦   ¦   ¦   ¦               ¦   4556ad1d2c6cc708f7f7d2bcf5096b0603d66c45de28db158ba1b23011640467_4.jar
+¦   ¦   ¦   ¦               ¦   4556ad1d2c6cc708f7f7d2bcf5096b0603d66c45de28db158ba1b23011640467_5.jar
+¦   ¦   ¦   ¦               ¦   
+¦   ¦   ¦   ¦               L---com
+¦   ¦   ¦   ¦                   L---example
+¦   ¦   ¦   ¦                       L---studentdiary
+¦   ¦   ¦   ¦                               AddGoalDialogFragment.dex
+¦   ¦   ¦   ¦                               AddTaskActivity$special$$inlined$viewModels$default$1.dex
+¦   ¦   ¦   ¦                               AddTaskActivity$special$$inlined$viewModels$default$2.dex
+¦   ¦   ¦   ¦                               AddTaskActivity$special$$inlined$viewModels$default$3.dex
+¦   ¦   ¦   ¦                               AddTaskActivity.dex
+¦   ¦   ¦   ¦                               AppDatabase$Companion.dex
+¦   ¦   ¦   ¦                               AppDatabase.dex
+¦   ¦   ¦   ¦                               AppDatabase_Impl$1.dex
+¦   ¦   ¦   ¦                               AppDatabase_Impl.dex
+¦   ¦   ¦   ¦                               CalendarActivity$sam$androidx_lifecycle_Observer$0.dex
+¦   ¦   ¦   ¦                               CalendarActivity$special$$inlined$viewModels$default$1.dex
+¦   ¦   ¦   ¦                               CalendarActivity$special$$inlined$viewModels$default$2.dex
+¦   ¦   ¦   ¦                               CalendarActivity$special$$inlined$viewModels$default$3.dex
+¦   ¦   ¦   ¦                               CalendarActivity.dex
+¦   ¦   ¦   ¦                               CalendarDecorator.dex
+¦   ¦   ¦   ¦                               CalendarFragmentDirections$Companion.dex
+¦   ¦   ¦   ¦                               CalendarFragmentDirections.dex
+¦   ¦   ¦   ¦                               DateConverters.dex
+¦   ¦   ¦   ¦                               EditGoalDialogFragment.dex
+¦   ¦   ¦   ¦                               EventDecorator.dex
+¦   ¦   ¦   ¦                               GlobalGoal.dex
+¦   ¦   ¦   ¦                               GlobalGoalFragment$sam$androidx_lifecycle_Observer$0.dex
+¦   ¦   ¦   ¦                               GlobalGoalFragment$special$$inlined$viewModels$default$1.dex
+¦   ¦   ¦   ¦                               GlobalGoalFragment$special$$inlined$viewModels$default$2.dex
+¦   ¦   ¦   ¦                               GlobalGoalFragment$special$$inlined$viewModels$default$3.dex
+¦   ¦   ¦   ¦                               GlobalGoalFragment$special$$inlined$viewModels$default$4.dex
+¦   ¦   ¦   ¦                               GlobalGoalFragment$special$$inlined$viewModels$default$5.dex
+¦   ¦   ¦   ¦                               GlobalGoalFragment.dex
+¦   ¦   ¦   ¦                               GlobalGoalFragmentDirections$Companion.dex
+¦   ¦   ¦   ¦                               GlobalGoalFragmentDirections.dex
+¦   ¦   ¦   ¦                               GlobalGoalViewModel.dex
+¦   ¦   ¦   ¦                               GoalDao.dex
+¦   ¦   ¦   ¦                               GoalDao_Impl$1.dex
+¦   ¦   ¦   ¦                               GoalDao_Impl$2.dex
+¦   ¦   ¦   ¦                               GoalDao_Impl$3.dex
+¦   ¦   ¦   ¦                               GoalDao_Impl.dex
+¦   ¦   ¦   ¦                               GoalEntity.dex
+¦   ¦   ¦   ¦                               GoalEntityMapperKt.dex
+¦   ¦   ¦   ¦                               GoalsAdapter$GoalViewHolder.dex
+¦   ¦   ¦   ¦                               GoalsAdapter.dex
+¦   ¦   ¦   ¦                               GoalsListFragment$onCreateView$1$1.dex
+¦   ¦   ¦   ¦                               GoalsListFragment$onCreateView$1.dex
+¦   ¦   ¦   ¦                               GoalsListFragment$special$$inlined$viewModels$default$1.dex
+¦   ¦   ¦   ¦                               GoalsListFragment$special$$inlined$viewModels$default$10.dex
+¦   ¦   ¦   ¦                               GoalsListFragment$special$$inlined$viewModels$default$2.dex
+¦   ¦   ¦   ¦                               GoalsListFragment$special$$inlined$viewModels$default$3.dex
+¦   ¦   ¦   ¦                               GoalsListFragment$special$$inlined$viewModels$default$4.dex
+¦   ¦   ¦   ¦                               GoalsListFragment$special$$inlined$viewModels$default$5.dex
+¦   ¦   ¦   ¦                               GoalsListFragment$special$$inlined$viewModels$default$6.dex
+¦   ¦   ¦   ¦                               GoalsListFragment$special$$inlined$viewModels$default$7.dex
+¦   ¦   ¦   ¦                               GoalsListFragment$special$$inlined$viewModels$default$8.dex
+¦   ¦   ¦   ¦                               GoalsListFragment$special$$inlined$viewModels$default$9.dex
+¦   ¦   ¦   ¦                               GoalsListFragment.dex
+¦   ¦   ¦   ¦                               GoalsListFragmentDirections$Companion.dex
+¦   ¦   ¦   ¦                               GoalsListFragmentDirections.dex
+¦   ¦   ¦   ¦                               GoalsViewModel$addGoal$1.dex
+¦   ¦   ¦   ¦                               GoalsViewModel$deleteGoal$1.dex
+¦   ¦   ¦   ¦                               GoalsViewModel$updateGoal$1.dex
+¦   ¦   ¦   ¦                               GoalsViewModel.dex
+¦   ¦   ¦   ¦                               GoalsViewModelFactory.dex
+¦   ¦   ¦   ¦                               MainActivity.dex
+¦   ¦   ¦   ¦                               ReminderBroadcastReceiver.dex
+¦   ¦   ¦   ¦                               StudentDiaryApp.dex
+¦   ¦   ¦   ¦                               SubGoal.dex
+¦   ¦   ¦   ¦                               SubGoalAdapter$SubGoalViewHolder.dex
+¦   ¦   ¦   ¦                               SubGoalAdapter.dex
+¦   ¦   ¦   ¦                               SubGoalFragment$sam$androidx_lifecycle_Observer$0.dex
+¦   ¦   ¦   ¦                               SubGoalFragment$special$$inlined$viewModels$default$1.dex
+¦   ¦   ¦   ¦                               SubGoalFragment$special$$inlined$viewModels$default$2.dex
+¦   ¦   ¦   ¦                               SubGoalFragment$special$$inlined$viewModels$default$3.dex
+¦   ¦   ¦   ¦                               SubGoalFragment$special$$inlined$viewModels$default$4.dex
+¦   ¦   ¦   ¦                               SubGoalFragment$special$$inlined$viewModels$default$5.dex
+¦   ¦   ¦   ¦                               SubGoalFragment.dex
+¦   ¦   ¦   ¦                               SubGoalFragmentDirections$Companion.dex
+¦   ¦   ¦   ¦                               SubGoalFragmentDirections.dex
+¦   ¦   ¦   ¦                               TaskAdapter$TaskViewHolder.dex
+¦   ¦   ¦   ¦                               TaskAdapter.dex
+¦   ¦   ¦   ¦                               TaskDao.dex
+¦   ¦   ¦   ¦                               TaskDao_Impl$1.dex
+¦   ¦   ¦   ¦                               TaskDao_Impl$2.dex
+¦   ¦   ¦   ¦                               TaskDao_Impl.dex
+¦   ¦   ¦   ¦                               TaskDetailActivity$special$$inlined$viewModels$default$1.dex
+¦   ¦   ¦   ¦                               TaskDetailActivity$special$$inlined$viewModels$default$2.dex
+¦   ¦   ¦   ¦                               TaskDetailActivity$special$$inlined$viewModels$default$3.dex
+¦   ¦   ¦   ¦                               TaskDetailActivity.dex
+¦   ¦   ¦   ¦                               TaskEntity.dex
+¦   ¦   ¦   ¦                               TaskEntityExtensionsKt.dex
+¦   ¦   ¦   ¦                               TaskListFragment$sam$androidx_lifecycle_Observer$0.dex
+¦   ¦   ¦   ¦                               TaskListFragment$special$$inlined$viewModels$default$1.dex
+¦   ¦   ¦   ¦                               TaskListFragment$special$$inlined$viewModels$default$2.dex
+¦   ¦   ¦   ¦                               TaskListFragment$special$$inlined$viewModels$default$3.dex
+¦   ¦   ¦   ¦                               TaskListFragment$special$$inlined$viewModels$default$4.dex
+¦   ¦   ¦   ¦                               TaskListFragment$special$$inlined$viewModels$default$5.dex
+¦   ¦   ¦   ¦                               TaskListFragment.dex
+¦   ¦   ¦   ¦                               TaskListFragmentDirections$Companion.dex
+¦   ¦   ¦   ¦                               TaskListFragmentDirections.dex
+¦   ¦   ¦   ¦                               TaskRepository.dex
+¦   ¦   ¦   ¦                               TaskViewModel$addTask$1.dex
+¦   ¦   ¦   ¦                               TaskViewModel$deleteReminder$1.dex
+¦   ¦   ¦   ¦                               TaskViewModel$deleteTask$1.dex
+¦   ¦   ¦   ¦                               TaskViewModel$updateReminder$1.dex
+¦   ¦   ¦   ¦                               TaskViewModel$updateTaskCompletion$1.dex
+¦   ¦   ¦   ¦                               TaskViewModel.dex
+¦   ¦   ¦   ¦                               UpdateProgressDialogFragment.dex
+¦   ¦   ¦   ¦                               
+¦   ¦   ¦   +---runtime_symbol_list
+¦   ¦   ¦   ¦   +---debug
+¦   ¦   ¦   ¦   ¦   L---processDebugResources
+¦   ¦   ¦   ¦   ¦           R.txt
+¦   ¦   ¦   ¦   ¦           
+¦   ¦   ¦   ¦   L---debugAndroidTest
+¦   ¦   ¦   ¦       L---processDebugAndroidTestResources
+¦   ¦   ¦   ¦               R.txt
+¦   ¦   ¦   ¦               
+¦   ¦   ¦   +---signing_config_versions
+¦   ¦   ¦   ¦   +---debug
+¦   ¦   ¦   ¦   ¦   L---writeDebugSigningConfigVersions
+¦   ¦   ¦   ¦   ¦           signing-config-versions.json
+¦   ¦   ¦   ¦   ¦           
+¦   ¦   ¦   ¦   L---debugAndroidTest
+¦   ¦   ¦   ¦       L---writeDebugAndroidTestSigningConfigVersions
+¦   ¦   ¦   ¦               signing-config-versions.json
+¦   ¦   ¦   ¦               
+¦   ¦   ¦   +---source_set_path_map
+¦   ¦   ¦   ¦   +---debug
+¦   ¦   ¦   ¦   ¦   L---mapDebugSourceSetPaths
+¦   ¦   ¦   ¦   ¦           file-map.txt
+¦   ¦   ¦   ¦   ¦           
+¦   ¦   ¦   ¦   L---debugAndroidTest
+¦   ¦   ¦   ¦       L---mapDebugAndroidTestSourceSetPaths
+¦   ¦   ¦   ¦               file-map.txt
+¦   ¦   ¦   ¦               
+¦   ¦   ¦   +---stable_resource_ids_file
+¦   ¦   ¦   ¦   +---debug
+¦   ¦   ¦   ¦   ¦   L---processDebugResources
+¦   ¦   ¦   ¦   ¦           stableIds.txt
+¦   ¦   ¦   ¦   ¦           
+¦   ¦   ¦   ¦   L---debugAndroidTest
+¦   ¦   ¦   ¦       L---processDebugAndroidTestResources
+¦   ¦   ¦   ¦               stableIds.txt
+¦   ¦   ¦   ¦               
+¦   ¦   ¦   +---sub_project_dex_archive
+¦   ¦   ¦   ¦   L---debug
+¦   ¦   ¦   ¦       L---dexBuilderDebug
+¦   ¦   ¦   ¦           L---out
+¦   ¦   ¦   +---symbol_list_with_package_name
+¦   ¦   ¦   ¦   +---debug
+¦   ¦   ¦   ¦   ¦   L---processDebugResources
+¦   ¦   ¦   ¦   ¦           package-aware-r.txt
+¦   ¦   ¦   ¦   ¦           
+¦   ¦   ¦   ¦   L---debugAndroidTest
+¦   ¦   ¦   ¦       L---processDebugAndroidTestResources
+¦   ¦   ¦   ¦               package-aware-r.txt
+¦   ¦   ¦   ¦               
+¦   ¦   ¦   +---tmp
+¦   ¦   ¦   ¦   L---manifest
+¦   ¦   ¦   ¦       L---androidTest
+¦   ¦   ¦   ¦           L---debug
+¦   ¦   ¦   L---validate_signing_config
+¦   ¦   ¦       +---debug
+¦   ¦   ¦       ¦   L---validateSigningDebug
+¦   ¦   ¦       L---debugAndroidTest
+¦   ¦   ¦           L---validateSigningDebugAndroidTest
+¦   ¦   +---kotlin
+¦   ¦   ¦   +---compileDebugKotlin
+¦   ¦   ¦   ¦   +---cacheable
+¦   ¦   ¦   ¦   ¦   ¦   last-build.bin
+¦   ¦   ¦   ¦   ¦   ¦   
+¦   ¦   ¦   ¦   ¦   L---caches-jvm
+¦   ¦   ¦   ¦   ¦       +---inputs
+¦   ¦   ¦   ¦   ¦       ¦       source-to-output.tab
+¦   ¦   ¦   ¦   ¦       ¦       source-to-output.tab.keystream
+¦   ¦   ¦   ¦   ¦       ¦       source-to-output.tab.keystream.len
+¦   ¦   ¦   ¦   ¦       ¦       source-to-output.tab.len
+¦   ¦   ¦   ¦   ¦       ¦       source-to-output.tab.values.at
+¦   ¦   ¦   ¦   ¦       ¦       source-to-output.tab_i
+¦   ¦   ¦   ¦   ¦       ¦       source-to-output.tab_i.len
+¦   ¦   ¦   ¦   ¦       ¦       
+¦   ¦   ¦   ¦   ¦       +---jvm
+¦   ¦   ¦   ¦   ¦       ¦   L---kotlin
+¦   ¦   ¦   ¦   ¦       ¦           class-attributes.tab
+¦   ¦   ¦   ¦   ¦       ¦           class-attributes.tab.keystream
+¦   ¦   ¦   ¦   ¦       ¦           class-attributes.tab.keystream.len
+¦   ¦   ¦   ¦   ¦       ¦           class-attributes.tab.len
+¦   ¦   ¦   ¦   ¦       ¦           class-attributes.tab.values.at
+¦   ¦   ¦   ¦   ¦       ¦           class-attributes.tab_i
+¦   ¦   ¦   ¦   ¦       ¦           class-attributes.tab_i.len
+¦   ¦   ¦   ¦   ¦       ¦           class-fq-name-to-source.tab
+¦   ¦   ¦   ¦   ¦       ¦           class-fq-name-to-source.tab.keystream
+¦   ¦   ¦   ¦   ¦       ¦           class-fq-name-to-source.tab.keystream.len
+¦   ¦   ¦   ¦   ¦       ¦           class-fq-name-to-source.tab.len
+¦   ¦   ¦   ¦   ¦       ¦           class-fq-name-to-source.tab.values.at
+¦   ¦   ¦   ¦   ¦       ¦           class-fq-name-to-source.tab_i
+¦   ¦   ¦   ¦   ¦       ¦           class-fq-name-to-source.tab_i.len
+¦   ¦   ¦   ¦   ¦       ¦           internal-name-to-source.tab
+¦   ¦   ¦   ¦   ¦       ¦           internal-name-to-source.tab.keystream
+¦   ¦   ¦   ¦   ¦       ¦           internal-name-to-source.tab.keystream.len
+¦   ¦   ¦   ¦   ¦       ¦           internal-name-to-source.tab.len
+¦   ¦   ¦   ¦   ¦       ¦           internal-name-to-source.tab.values.at
+¦   ¦   ¦   ¦   ¦       ¦           internal-name-to-source.tab_i
+¦   ¦   ¦   ¦   ¦       ¦           internal-name-to-source.tab_i.len
+¦   ¦   ¦   ¦   ¦       ¦           package-parts.tab
+¦   ¦   ¦   ¦   ¦       ¦           package-parts.tab.keystream
+¦   ¦   ¦   ¦   ¦       ¦           package-parts.tab.keystream.len
+¦   ¦   ¦   ¦   ¦       ¦           package-parts.tab.len
+¦   ¦   ¦   ¦   ¦       ¦           package-parts.tab.values.at
+¦   ¦   ¦   ¦   ¦       ¦           package-parts.tab_i
+¦   ¦   ¦   ¦   ¦       ¦           package-parts.tab_i.len
+¦   ¦   ¦   ¦   ¦       ¦           proto.tab
+¦   ¦   ¦   ¦   ¦       ¦           proto.tab.keystream
+¦   ¦   ¦   ¦   ¦       ¦           proto.tab.keystream.len
+¦   ¦   ¦   ¦   ¦       ¦           proto.tab.len
+¦   ¦   ¦   ¦   ¦       ¦           proto.tab.values.at
+¦   ¦   ¦   ¦   ¦       ¦           proto.tab_i
+¦   ¦   ¦   ¦   ¦       ¦           proto.tab_i.len
+¦   ¦   ¦   ¦   ¦       ¦           source-to-classes.tab
+¦   ¦   ¦   ¦   ¦       ¦           source-to-classes.tab.keystream
+¦   ¦   ¦   ¦   ¦       ¦           source-to-classes.tab.keystream.len
+¦   ¦   ¦   ¦   ¦       ¦           source-to-classes.tab.len
+¦   ¦   ¦   ¦   ¦       ¦           source-to-classes.tab.values.at
+¦   ¦   ¦   ¦   ¦       ¦           source-to-classes.tab_i
+¦   ¦   ¦   ¦   ¦       ¦           source-to-classes.tab_i.len
+¦   ¦   ¦   ¦   ¦       ¦           subtypes.tab
+¦   ¦   ¦   ¦   ¦       ¦           subtypes.tab.keystream
+¦   ¦   ¦   ¦   ¦       ¦           subtypes.tab.keystream.len
+¦   ¦   ¦   ¦   ¦       ¦           subtypes.tab.len
+¦   ¦   ¦   ¦   ¦       ¦           subtypes.tab.values.at
+¦   ¦   ¦   ¦   ¦       ¦           subtypes.tab_i
+¦   ¦   ¦   ¦   ¦       ¦           subtypes.tab_i.len
+¦   ¦   ¦   ¦   ¦       ¦           supertypes.tab
+¦   ¦   ¦   ¦   ¦       ¦           supertypes.tab.keystream
+¦   ¦   ¦   ¦   ¦       ¦           supertypes.tab.keystream.len
+¦   ¦   ¦   ¦   ¦       ¦           supertypes.tab.len
+¦   ¦   ¦   ¦   ¦       ¦           supertypes.tab.values.at
+¦   ¦   ¦   ¦   ¦       ¦           supertypes.tab_i
+¦   ¦   ¦   ¦   ¦       ¦           supertypes.tab_i.len
+¦   ¦   ¦   ¦   ¦       ¦           
+¦   ¦   ¦   ¦   ¦       L---lookups
+¦   ¦   ¦   ¦   ¦               counters.tab
+¦   ¦   ¦   ¦   ¦               file-to-id.tab
+¦   ¦   ¦   ¦   ¦               file-to-id.tab.keystream
+¦   ¦   ¦   ¦   ¦               file-to-id.tab.keystream.len
+¦   ¦   ¦   ¦   ¦               file-to-id.tab.len
+¦   ¦   ¦   ¦   ¦               file-to-id.tab.values.at
+¦   ¦   ¦   ¦   ¦               file-to-id.tab_i
+¦   ¦   ¦   ¦   ¦               file-to-id.tab_i.len
+¦   ¦   ¦   ¦   ¦               id-to-file.tab
+¦   ¦   ¦   ¦   ¦               id-to-file.tab.keystream
+¦   ¦   ¦   ¦   ¦               id-to-file.tab.keystream.len
+¦   ¦   ¦   ¦   ¦               id-to-file.tab.len
+¦   ¦   ¦   ¦   ¦               id-to-file.tab.values.at
+¦   ¦   ¦   ¦   ¦               id-to-file.tab_i
+¦   ¦   ¦   ¦   ¦               id-to-file.tab_i.len
+¦   ¦   ¦   ¦   ¦               lookups.tab
+¦   ¦   ¦   ¦   ¦               lookups.tab.keystream
+¦   ¦   ¦   ¦   ¦               lookups.tab.keystream.len
+¦   ¦   ¦   ¦   ¦               lookups.tab.len
+¦   ¦   ¦   ¦   ¦               lookups.tab.values.at
+¦   ¦   ¦   ¦   ¦               lookups.tab_i
+¦   ¦   ¦   ¦   ¦               lookups.tab_i.len
+¦   ¦   ¦   ¦   ¦               
+¦   ¦   ¦   ¦   +---classpath-snapshot
+¦   ¦   ¦   ¦   ¦       shrunk-classpath-snapshot.bin
+¦   ¦   ¦   ¦   ¦       
+¦   ¦   ¦   ¦   L---local-state
+¦   ¦   ¦   ¦           build-history.bin
+¦   ¦   ¦   ¦           
+¦   ¦   ¦   L---kaptGenerateStubsDebugKotlin
+¦   ¦   ¦       +---cacheable
+¦   ¦   ¦       ¦   ¦   last-build.bin
+¦   ¦   ¦       ¦   ¦   
+¦   ¦   ¦       ¦   L---caches-jvm
+¦   ¦   ¦       ¦       +---inputs
+¦   ¦   ¦       ¦       ¦       source-to-output.tab
+¦   ¦   ¦       ¦       ¦       source-to-output.tab.keystream
+¦   ¦   ¦       ¦       ¦       source-to-output.tab.keystream.len
+¦   ¦   ¦       ¦       ¦       source-to-output.tab.len
+¦   ¦   ¦       ¦       ¦       source-to-output.tab.values
+¦   ¦   ¦       ¦       ¦       source-to-output.tab.values.at
+¦   ¦   ¦       ¦       ¦       source-to-output.tab.values.s
+¦   ¦   ¦       ¦       ¦       source-to-output.tab_i
+¦   ¦   ¦       ¦       ¦       source-to-output.tab_i.len
+¦   ¦   ¦       ¦       ¦       
+¦   ¦   ¦       ¦       +---jvm
+¦   ¦   ¦       ¦       ¦   L---kotlin
+¦   ¦   ¦       ¦       ¦           class-attributes.tab
+¦   ¦   ¦       ¦       ¦           class-attributes.tab.keystream
+¦   ¦   ¦       ¦       ¦           class-attributes.tab.keystream.len
+¦   ¦   ¦       ¦       ¦           class-attributes.tab.len
+¦   ¦   ¦       ¦       ¦           class-attributes.tab.values.at
+¦   ¦   ¦       ¦       ¦           class-attributes.tab_i
+¦   ¦   ¦       ¦       ¦           class-attributes.tab_i.len
+¦   ¦   ¦       ¦       ¦           class-fq-name-to-source.tab
+¦   ¦   ¦       ¦       ¦           class-fq-name-to-source.tab.keystream
+¦   ¦   ¦       ¦       ¦           class-fq-name-to-source.tab.keystream.len
+¦   ¦   ¦       ¦       ¦           class-fq-name-to-source.tab.len
+¦   ¦   ¦       ¦       ¦           class-fq-name-to-source.tab.values.at
+¦   ¦   ¦       ¦       ¦           class-fq-name-to-source.tab_i
+¦   ¦   ¦       ¦       ¦           class-fq-name-to-source.tab_i.len
+¦   ¦   ¦       ¦       ¦           internal-name-to-source.tab
+¦   ¦   ¦       ¦       ¦           internal-name-to-source.tab.keystream
+¦   ¦   ¦       ¦       ¦           internal-name-to-source.tab.keystream.len
+¦   ¦   ¦       ¦       ¦           internal-name-to-source.tab.len
+¦   ¦   ¦       ¦       ¦           internal-name-to-source.tab.values.at
+¦   ¦   ¦       ¦       ¦           internal-name-to-source.tab_i
+¦   ¦   ¦       ¦       ¦           internal-name-to-source.tab_i.len
+¦   ¦   ¦       ¦       ¦           package-parts.tab
+¦   ¦   ¦       ¦       ¦           package-parts.tab.keystream
+¦   ¦   ¦       ¦       ¦           package-parts.tab.keystream.len
+¦   ¦   ¦       ¦       ¦           package-parts.tab.len
+¦   ¦   ¦       ¦       ¦           package-parts.tab.values.at
+¦   ¦   ¦       ¦       ¦           package-parts.tab_i
+¦   ¦   ¦       ¦       ¦           package-parts.tab_i.len
+¦   ¦   ¦       ¦       ¦           proto.tab
+¦   ¦   ¦       ¦       ¦           proto.tab.keystream
+¦   ¦   ¦       ¦       ¦           proto.tab.keystream.len
+¦   ¦   ¦       ¦       ¦           proto.tab.len
+¦   ¦   ¦       ¦       ¦           proto.tab.values
+¦   ¦   ¦       ¦       ¦           proto.tab.values.at
+¦   ¦   ¦       ¦       ¦           proto.tab.values.s
+¦   ¦   ¦       ¦       ¦           proto.tab_i
+¦   ¦   ¦       ¦       ¦           proto.tab_i.len
+¦   ¦   ¦       ¦       ¦           source-to-classes.tab
+¦   ¦   ¦       ¦       ¦           source-to-classes.tab.keystream
+¦   ¦   ¦       ¦       ¦           source-to-classes.tab.keystream.len
+¦   ¦   ¦       ¦       ¦           source-to-classes.tab.len
+¦   ¦   ¦       ¦       ¦           source-to-classes.tab.values.at
+¦   ¦   ¦       ¦       ¦           source-to-classes.tab_i
+¦   ¦   ¦       ¦       ¦           source-to-classes.tab_i.len
+¦   ¦   ¦       ¦       ¦           subtypes.tab
+¦   ¦   ¦       ¦       ¦           subtypes.tab.keystream
+¦   ¦   ¦       ¦       ¦           subtypes.tab.keystream.len
+¦   ¦   ¦       ¦       ¦           subtypes.tab.len
+¦   ¦   ¦       ¦       ¦           subtypes.tab.values.at
+¦   ¦   ¦       ¦       ¦           subtypes.tab_i
+¦   ¦   ¦       ¦       ¦           subtypes.tab_i.len
+¦   ¦   ¦       ¦       ¦           supertypes.tab
+¦   ¦   ¦       ¦       ¦           supertypes.tab.keystream
+¦   ¦   ¦       ¦       ¦           supertypes.tab.keystream.len
+¦   ¦   ¦       ¦       ¦           supertypes.tab.len
+¦   ¦   ¦       ¦       ¦           supertypes.tab.values.at
+¦   ¦   ¦       ¦       ¦           supertypes.tab_i
+¦   ¦   ¦       ¦       ¦           supertypes.tab_i.len
+¦   ¦   ¦       ¦       ¦           
+¦   ¦   ¦       ¦       L---lookups
+¦   ¦   ¦       ¦               counters.tab
+¦   ¦   ¦       ¦               file-to-id.tab
+¦   ¦   ¦       ¦               file-to-id.tab.keystream
+¦   ¦   ¦       ¦               file-to-id.tab.keystream.len
+¦   ¦   ¦       ¦               file-to-id.tab.len
+¦   ¦   ¦       ¦               file-to-id.tab.values.at
+¦   ¦   ¦       ¦               file-to-id.tab_i
+¦   ¦   ¦       ¦               file-to-id.tab_i.len
+¦   ¦   ¦       ¦               id-to-file.tab
+¦   ¦   ¦       ¦               id-to-file.tab.keystream
+¦   ¦   ¦       ¦               id-to-file.tab.keystream.len
+¦   ¦   ¦       ¦               id-to-file.tab.len
+¦   ¦   ¦       ¦               id-to-file.tab.values.at
+¦   ¦   ¦       ¦               id-to-file.tab_i
+¦   ¦   ¦       ¦               id-to-file.tab_i.len
+¦   ¦   ¦       ¦               lookups.tab
+¦   ¦   ¦       ¦               lookups.tab.keystream
+¦   ¦   ¦       ¦               lookups.tab.keystream.len
+¦   ¦   ¦       ¦               lookups.tab.len
+¦   ¦   ¦       ¦               lookups.tab.values
+¦   ¦   ¦       ¦               lookups.tab.values.at
+¦   ¦   ¦       ¦               lookups.tab.values.s
+¦   ¦   ¦       ¦               lookups.tab_i
+¦   ¦   ¦       ¦               lookups.tab_i.len
+¦   ¦   ¦       ¦               
+¦   ¦   ¦       +---classpath-snapshot
+¦   ¦   ¦       ¦       shrunk-classpath-snapshot.bin
+¦   ¦   ¦       ¦       
+¦   ¦   ¦       L---local-state
+¦   ¦   ¦               build-history.bin
+¦   ¦   ¦               
+¦   ¦   +---outputs
+¦   ¦   ¦   L---logs
+¦   ¦   ¦           manifest-merger-debug-report.txt
+¦   ¦   ¦           
+¦   ¦   +---snapshot
+¦   ¦   ¦   L---kotlin
+¦   ¦   L---tmp
+¦   ¦       +---compileDebugJavaWithJavac
+¦   ¦       ¦   ¦   previous-compilation-data.bin
+¦   ¦       ¦   ¦   
+¦   ¦       ¦   L---compileTransaction
+¦   ¦       ¦       +---backup-dir
+¦   ¦       ¦       L---stash-dir
+¦   ¦       +---kapt3
+¦   ¦       ¦   +---classes
+¦   ¦       ¦   ¦   L---debug
+¦   ¦       ¦   +---incApCache
+¦   ¦       ¦   ¦   L---debug
+¦   ¦       ¦   ¦           ap-classpath-entries.bin
+¦   ¦       ¦   ¦           apt-cache.bin
+¦   ¦       ¦   ¦           classpath-entries.bin
+¦   ¦       ¦   ¦           classpath-structure.bin
+¦   ¦       ¦   ¦           java-cache.bin
+¦   ¦       ¦   ¦           
+¦   ¦       ¦   +---incrementalData
+¦   ¦       ¦   ¦   L---debug
+¦   ¦       ¦   ¦       +---com
+¦   ¦       ¦   ¦       ¦   L---example
+¦   ¦       ¦   ¦       ¦       L---studentdiary
+¦   ¦       ¦   ¦       ¦               AddGoalDialogFragment.class
+¦   ¦       ¦   ¦       ¦               AddTaskActivity.class
+¦   ¦       ¦   ¦       ¦               AppDatabase$Companion.class
+¦   ¦       ¦   ¦       ¦               AppDatabase.class
+¦   ¦       ¦   ¦       ¦               CalendarActivity.class
+¦   ¦       ¦   ¦       ¦               CalendarDecorator.class
+¦   ¦       ¦   ¦       ¦               CalendarFragmentDirections$Companion.class
+¦   ¦       ¦   ¦       ¦               CalendarFragmentDirections.class
+¦   ¦       ¦   ¦       ¦               DateConverters.class
+¦   ¦       ¦   ¦       ¦               EditGoalDialogFragment.class
+¦   ¦       ¦   ¦       ¦               EventDecorator.class
+¦   ¦       ¦   ¦       ¦               GlobalGoal.class
+¦   ¦       ¦   ¦       ¦               GlobalGoalFragment.class
+¦   ¦       ¦   ¦       ¦               GlobalGoalFragmentDirections$Companion.class
+¦   ¦       ¦   ¦       ¦               GlobalGoalFragmentDirections.class
+¦   ¦       ¦   ¦       ¦               GlobalGoalViewModel.class
+¦   ¦       ¦   ¦       ¦               GoalDao.class
+¦   ¦       ¦   ¦       ¦               GoalEntity.class
+¦   ¦       ¦   ¦       ¦               GoalEntityMapperKt.class
+¦   ¦       ¦   ¦       ¦               GoalsAdapter$GoalViewHolder.class
+¦   ¦       ¦   ¦       ¦               GoalsAdapter.class
+¦   ¦       ¦   ¦       ¦               GoalsListFragment.class
+¦   ¦       ¦   ¦       ¦               GoalsListFragmentDirections$Companion.class
+¦   ¦       ¦   ¦       ¦               GoalsListFragmentDirections.class
+¦   ¦       ¦   ¦       ¦               GoalsViewModel.class
+¦   ¦       ¦   ¦       ¦               GoalsViewModelFactory.class
+¦   ¦       ¦   ¦       ¦               MainActivity.class
+¦   ¦       ¦   ¦       ¦               ReminderBroadcastReceiver.class
+¦   ¦       ¦   ¦       ¦               StudentDiaryApp.class
+¦   ¦       ¦   ¦       ¦               SubGoal.class
+¦   ¦       ¦   ¦       ¦               SubGoalAdapter$SubGoalViewHolder.class
+¦   ¦       ¦   ¦       ¦               SubGoalAdapter.class
+¦   ¦       ¦   ¦       ¦               SubGoalFragment.class
+¦   ¦       ¦   ¦       ¦               SubGoalFragmentDirections$Companion.class
+¦   ¦       ¦   ¦       ¦               SubGoalFragmentDirections.class
+¦   ¦       ¦   ¦       ¦               TaskAdapter$TaskViewHolder.class
+¦   ¦       ¦   ¦       ¦               TaskAdapter.class
+¦   ¦       ¦   ¦       ¦               TaskDao.class
+¦   ¦       ¦   ¦       ¦               TaskDetailActivity.class
+¦   ¦       ¦   ¦       ¦               TaskEntity.class
+¦   ¦       ¦   ¦       ¦               TaskEntityExtensionsKt.class
+¦   ¦       ¦   ¦       ¦               TaskListFragment.class
+¦   ¦       ¦   ¦       ¦               TaskListFragmentDirections$Companion.class
+¦   ¦       ¦   ¦       ¦               TaskListFragmentDirections.class
+¦   ¦       ¦   ¦       ¦               TaskRepository.class
+¦   ¦       ¦   ¦       ¦               TaskViewModel.class
+¦   ¦       ¦   ¦       ¦               UpdateProgressDialogFragment.class
+¦   ¦       ¦   ¦       ¦               
+¦   ¦       ¦   ¦       L---META-INF
+¦   ¦       ¦   ¦               app_debug.kotlin_module
+¦   ¦       ¦   ¦               
+¦   ¦       ¦   L---stubs
+¦   ¦       ¦       L---debug
+¦   ¦       ¦           +---com
+¦   ¦       ¦           ¦   L---example
+¦   ¦       ¦           ¦       L---studentdiary
+¦   ¦       ¦           ¦               AddGoalDialogFragment.java
+¦   ¦       ¦           ¦               AddGoalDialogFragment.kapt_metadata
+¦   ¦       ¦           ¦               AddTaskActivity.java
+¦   ¦       ¦           ¦               AddTaskActivity.kapt_metadata
+¦   ¦       ¦           ¦               AppDatabase.java
+¦   ¦       ¦           ¦               AppDatabase.kapt_metadata
+¦   ¦       ¦           ¦               CalendarActivity.java
+¦   ¦       ¦           ¦               CalendarActivity.kapt_metadata
+¦   ¦       ¦           ¦               CalendarDecorator.java
+¦   ¦       ¦           ¦               CalendarDecorator.kapt_metadata
+¦   ¦       ¦           ¦               CalendarFragmentDirections.java
+¦   ¦       ¦           ¦               CalendarFragmentDirections.kapt_metadata
+¦   ¦       ¦           ¦               DateConverters.java
+¦   ¦       ¦           ¦               DateConverters.kapt_metadata
+¦   ¦       ¦           ¦               EditGoalDialogFragment.java
+¦   ¦       ¦           ¦               EditGoalDialogFragment.kapt_metadata
+¦   ¦       ¦           ¦               EventDecorator.java
+¦   ¦       ¦           ¦               EventDecorator.kapt_metadata
+¦   ¦       ¦           ¦               GlobalGoal.java
+¦   ¦       ¦           ¦               GlobalGoal.kapt_metadata
+¦   ¦       ¦           ¦               GlobalGoalFragment.java
+¦   ¦       ¦           ¦               GlobalGoalFragment.kapt_metadata
+¦   ¦       ¦           ¦               GlobalGoalFragmentDirections.java
+¦   ¦       ¦           ¦               GlobalGoalFragmentDirections.kapt_metadata
+¦   ¦       ¦           ¦               GlobalGoalViewModel.java
+¦   ¦       ¦           ¦               GlobalGoalViewModel.kapt_metadata
+¦   ¦       ¦           ¦               GoalDao.java
+¦   ¦       ¦           ¦               GoalDao.kapt_metadata
+¦   ¦       ¦           ¦               GoalEntity.java
+¦   ¦       ¦           ¦               GoalEntity.kapt_metadata
+¦   ¦       ¦           ¦               GoalEntityMapperKt.java
+¦   ¦       ¦           ¦               GoalEntityMapperKt.kapt_metadata
+¦   ¦       ¦           ¦               GoalsAdapter.java
+¦   ¦       ¦           ¦               GoalsAdapter.kapt_metadata
+¦   ¦       ¦           ¦               GoalsListFragment.java
+¦   ¦       ¦           ¦               GoalsListFragment.kapt_metadata
+¦   ¦       ¦           ¦               GoalsListFragmentDirections.java
+¦   ¦       ¦           ¦               GoalsListFragmentDirections.kapt_metadata
+¦   ¦       ¦           ¦               GoalsViewModel.java
+¦   ¦       ¦           ¦               GoalsViewModel.kapt_metadata
+¦   ¦       ¦           ¦               GoalsViewModelFactory.java
+¦   ¦       ¦           ¦               GoalsViewModelFactory.kapt_metadata
+¦   ¦       ¦           ¦               MainActivity.java
+¦   ¦       ¦           ¦               MainActivity.kapt_metadata
+¦   ¦       ¦           ¦               ReminderBroadcastReceiver.java
+¦   ¦       ¦           ¦               ReminderBroadcastReceiver.kapt_metadata
+¦   ¦       ¦           ¦               StudentDiaryApp.java
+¦   ¦       ¦           ¦               StudentDiaryApp.kapt_metadata
+¦   ¦       ¦           ¦               SubGoal.java
+¦   ¦       ¦           ¦               SubGoal.kapt_metadata
+¦   ¦       ¦           ¦               SubGoalAdapter.java
+¦   ¦       ¦           ¦               SubGoalAdapter.kapt_metadata
+¦   ¦       ¦           ¦               SubGoalFragment.java
+¦   ¦       ¦           ¦               SubGoalFragment.kapt_metadata
+¦   ¦       ¦           ¦               SubGoalFragmentDirections.java
+¦   ¦       ¦           ¦               SubGoalFragmentDirections.kapt_metadata
+¦   ¦       ¦           ¦               TaskAdapter.java
+¦   ¦       ¦           ¦               TaskAdapter.kapt_metadata
+¦   ¦       ¦           ¦               TaskDao.java
+¦   ¦       ¦           ¦               TaskDao.kapt_metadata
+¦   ¦       ¦           ¦               TaskDetailActivity.java
+¦   ¦       ¦           ¦               TaskDetailActivity.kapt_metadata
+¦   ¦       ¦           ¦               TaskEntity.java
+¦   ¦       ¦           ¦               TaskEntity.kapt_metadata
+¦   ¦       ¦           ¦               TaskEntityExtensionsKt.java
+¦   ¦       ¦           ¦               TaskEntityExtensionsKt.kapt_metadata
+¦   ¦       ¦           ¦               TaskListFragment.java
+¦   ¦       ¦           ¦               TaskListFragment.kapt_metadata
+¦   ¦       ¦           ¦               TaskListFragmentDirections.java
+¦   ¦       ¦           ¦               TaskListFragmentDirections.kapt_metadata
+¦   ¦       ¦           ¦               TaskRepository.java
+¦   ¦       ¦           ¦               TaskRepository.kapt_metadata
+¦   ¦       ¦           ¦               TaskViewModel.java
+¦   ¦       ¦           ¦               TaskViewModel.kapt_metadata
+¦   ¦       ¦           ¦               UpdateProgressDialogFragment.java
+¦   ¦       ¦           ¦               UpdateProgressDialogFragment.kapt_metadata
+¦   ¦       ¦           ¦               
+¦   ¦       ¦           L---error
+¦   ¦       ¦                   NonExistentClass.java
+¦   ¦       ¦                   
+¦   ¦       L---kotlin-classes
+¦   ¦           L---debug
+¦   ¦               +---com
+¦   ¦               ¦   L---example
+¦   ¦               ¦       L---studentdiary
+¦   ¦               ¦               AddGoalDialogFragment.class
+¦   ¦               ¦               AddTaskActivity$special$$inlined$viewModels$default$1.class
+¦   ¦               ¦               AddTaskActivity$special$$inlined$viewModels$default$2.class
+¦   ¦               ¦               AddTaskActivity$special$$inlined$viewModels$default$3.class
+¦   ¦               ¦               AddTaskActivity.class
+¦   ¦               ¦               AppDatabase$Companion.class
+¦   ¦               ¦               AppDatabase.class
+¦   ¦               ¦               CalendarActivity$sam$androidx_lifecycle_Observer$0.class
+¦   ¦               ¦               CalendarActivity$special$$inlined$viewModels$default$1.class
+¦   ¦               ¦               CalendarActivity$special$$inlined$viewModels$default$2.class
+¦   ¦               ¦               CalendarActivity$special$$inlined$viewModels$default$3.class
+¦   ¦               ¦               CalendarActivity.class
+¦   ¦               ¦               CalendarDecorator.class
+¦   ¦               ¦               CalendarFragmentDirections$Companion.class
+¦   ¦               ¦               CalendarFragmentDirections.class
+¦   ¦               ¦               DateConverters.class
+¦   ¦               ¦               EditGoalDialogFragment.class
+¦   ¦               ¦               EventDecorator.class
+¦   ¦               ¦               GlobalGoal.class
+¦   ¦               ¦               GlobalGoalFragment$sam$androidx_lifecycle_Observer$0.class
+¦   ¦               ¦               GlobalGoalFragment$special$$inlined$viewModels$default$1.class
+¦   ¦               ¦               GlobalGoalFragment$special$$inlined$viewModels$default$2.class
+¦   ¦               ¦               GlobalGoalFragment$special$$inlined$viewModels$default$3.class
+¦   ¦               ¦               GlobalGoalFragment$special$$inlined$viewModels$default$4.class
+¦   ¦               ¦               GlobalGoalFragment$special$$inlined$viewModels$default$5.class
+¦   ¦               ¦               GlobalGoalFragment.class
+¦   ¦               ¦               GlobalGoalFragmentDirections$Companion.class
+¦   ¦               ¦               GlobalGoalFragmentDirections.class
+¦   ¦               ¦               GlobalGoalViewModel.class
+¦   ¦               ¦               GoalDao.class
+¦   ¦               ¦               GoalEntity.class
+¦   ¦               ¦               GoalEntityMapperKt.class
+¦   ¦               ¦               GoalsAdapter$GoalViewHolder.class
+¦   ¦               ¦               GoalsAdapter.class
+¦   ¦               ¦               GoalsListFragment$onCreateView$1$1.class
+¦   ¦               ¦               GoalsListFragment$onCreateView$1.class
+¦   ¦               ¦               GoalsListFragment$special$$inlined$viewModels$default$1.class
+¦   ¦               ¦               GoalsListFragment$special$$inlined$viewModels$default$10.class
+¦   ¦               ¦               GoalsListFragment$special$$inlined$viewModels$default$2.class
+¦   ¦               ¦               GoalsListFragment$special$$inlined$viewModels$default$3.class
+¦   ¦               ¦               GoalsListFragment$special$$inlined$viewModels$default$4.class
+¦   ¦               ¦               GoalsListFragment$special$$inlined$viewModels$default$5.class
+¦   ¦               ¦               GoalsListFragment$special$$inlined$viewModels$default$6.class
+¦   ¦               ¦               GoalsListFragment$special$$inlined$viewModels$default$7.class
+¦   ¦               ¦               GoalsListFragment$special$$inlined$viewModels$default$8.class
+¦   ¦               ¦               GoalsListFragment$special$$inlined$viewModels$default$9.class
+¦   ¦               ¦               GoalsListFragment.class
+¦   ¦               ¦               GoalsListFragmentDirections$Companion.class
+¦   ¦               ¦               GoalsListFragmentDirections.class
+¦   ¦               ¦               GoalsViewModel$addGoal$1.class
+¦   ¦               ¦               GoalsViewModel$deleteGoal$1.class
+¦   ¦               ¦               GoalsViewModel$updateGoal$1.class
+¦   ¦               ¦               GoalsViewModel.class
+¦   ¦               ¦               GoalsViewModelFactory.class
+¦   ¦               ¦               MainActivity.class
+¦   ¦               ¦               ReminderBroadcastReceiver.class
+¦   ¦               ¦               StudentDiaryApp.class
+¦   ¦               ¦               SubGoal.class
+¦   ¦               ¦               SubGoalAdapter$SubGoalViewHolder.class
+¦   ¦               ¦               SubGoalAdapter.class
+¦   ¦               ¦               SubGoalFragment$sam$androidx_lifecycle_Observer$0.class
+¦   ¦               ¦               SubGoalFragment$special$$inlined$viewModels$default$1.class
+¦   ¦               ¦               SubGoalFragment$special$$inlined$viewModels$default$2.class
+¦   ¦               ¦               SubGoalFragment$special$$inlined$viewModels$default$3.class
+¦   ¦               ¦               SubGoalFragment$special$$inlined$viewModels$default$4.class
+¦   ¦               ¦               SubGoalFragment$special$$inlined$viewModels$default$5.class
+¦   ¦               ¦               SubGoalFragment.class
+¦   ¦               ¦               SubGoalFragmentDirections$Companion.class
+¦   ¦               ¦               SubGoalFragmentDirections.class
+¦   ¦               ¦               TaskAdapter$TaskViewHolder.class
+¦   ¦               ¦               TaskAdapter.class
+¦   ¦               ¦               TaskDao.class
+¦   ¦               ¦               TaskDetailActivity$special$$inlined$viewModels$default$1.class
+¦   ¦               ¦               TaskDetailActivity$special$$inlined$viewModels$default$2.class
+¦   ¦               ¦               TaskDetailActivity$special$$inlined$viewModels$default$3.class
+¦   ¦               ¦               TaskDetailActivity.class
+¦   ¦               ¦               TaskEntity.class
+¦   ¦               ¦               TaskEntityExtensionsKt.class
+¦   ¦               ¦               TaskListFragment$sam$androidx_lifecycle_Observer$0.class
+¦   ¦               ¦               TaskListFragment$special$$inlined$viewModels$default$1.class
+¦   ¦               ¦               TaskListFragment$special$$inlined$viewModels$default$2.class
+¦   ¦               ¦               TaskListFragment$special$$inlined$viewModels$default$3.class
+¦   ¦               ¦               TaskListFragment$special$$inlined$viewModels$default$4.class
+¦   ¦               ¦               TaskListFragment$special$$inlined$viewModels$default$5.class
+¦   ¦               ¦               TaskListFragment.class
+¦   ¦               ¦               TaskListFragmentDirections$Companion.class
+¦   ¦               ¦               TaskListFragmentDirections.class
+¦   ¦               ¦               TaskRepository.class
+¦   ¦               ¦               TaskViewModel$addTask$1.class
+¦   ¦               ¦               TaskViewModel$deleteReminder$1.class
+¦   ¦               ¦               TaskViewModel$deleteTask$1.class
+¦   ¦               ¦               TaskViewModel$updateReminder$1.class
+¦   ¦               ¦               TaskViewModel$updateTaskCompletion$1.class
+¦   ¦               ¦               TaskViewModel.class
+¦   ¦               ¦               UpdateProgressDialogFragment.class
+¦   ¦               ¦               
+¦   ¦               L---META-INF
+¦   ¦                       app_debug.kotlin_module
+¦   ¦                       
+¦   +---sampledata
+¦   L---src
+¦       +---androidTest
+¦       ¦   L---java
+¦       ¦       L---com
+¦       ¦           L---example
+¦       ¦               L---studentdiary
+¦       ¦                       ExampleInstrumentedTest.kt
+¦       ¦                       
+¦       +---main
+¦       ¦   ¦   AndroidManifest.xml
+¦       ¦   ¦   res.rar
+¦       ¦   ¦   
+¦       ¦   +---java
+¦       ¦   ¦   L---com
+¦       ¦   ¦       L---example
+¦       ¦   ¦           L---studentdiary
+¦       ¦   ¦                   AddGoalDialogFragment.kt
+¦       ¦   ¦                   AddTaskActivity.kt
+¦       ¦   ¦                   AppDatabase.kt
+¦       ¦   ¦                   CalendarActivity.kt
+¦       ¦   ¦                   CalendarDecorator.kt
+¦       ¦   ¦                   DateConverters.kt
+¦       ¦   ¦                   EditGoalDialogFragment.kt
+¦       ¦   ¦                   EventDecorator.kt
+¦       ¦   ¦                   GlobalGoal.kt
+¦       ¦   ¦                   GlobalGoalFragment.kt
+¦       ¦   ¦                   GlobalGoalViewModel.kt
+¦       ¦   ¦                   GoalDao.kt
+¦       ¦   ¦                   GoalEntity.kt
+¦       ¦   ¦                   GoalEntityMapper.kt
+¦       ¦   ¦                   GoalsAdapter.kt
+¦       ¦   ¦                   GoalsListFragment.kt
+¦       ¦   ¦                   GoalsViewModel.kt
+¦       ¦   ¦                   GoalsViewModelFactory.kt
+¦       ¦   ¦                   MainActivity.kt
+¦       ¦   ¦                   ReminderBroadcastReceiver.kt
+¦       ¦   ¦                   StudentDiaryApp.kt
+¦       ¦   ¦                   SubGoal.kt
+¦       ¦   ¦                   SubGoalAdapter.kt
+¦       ¦   ¦                   SubGoalFragment.kt
+¦       ¦   ¦                   TaskAdapter.kt
+¦       ¦   ¦                   TaskDao.kt
+¦       ¦   ¦                   TaskDetailActivity.kt
+¦       ¦   ¦                   TaskEntity.kt
+¦       ¦   ¦                   TaskEntityExtensions.kt
+¦       ¦   ¦                   TaskListFragment.kt
+¦       ¦   ¦                   TaskRepository.kt
+¦       ¦   ¦                   TaskViewModel.kt
+¦       ¦   ¦                   UpdateProgressDialogFragment.kt
+¦       ¦   ¦                   
+¦       ¦   L---res
+¦       ¦       +---drawable
+¦       ¦       ¦       addknopka.png
+¦       ¦       ¦       alarm.png
+¦       ¦       ¦       calendar.png
+¦       ¦       ¦       complete.png
+¦       ¦       ¦       goal.png
+¦       ¦       ¦       ic_launcher_background.xml
+¦       ¦       ¦       item_background.xml
+¦       ¦       ¦       task.png
+¦       ¦       ¦       
+¦       ¦       +---drawable-v24
+¦       ¦       ¦       ic_launcher_foreground.xml
+¦       ¦       ¦       
+¦       ¦       +---layout
+¦       ¦       ¦       activity_add_task.xml
+¦       ¦       ¦       activity_calendar.xml
+¦       ¦       ¦       activity_main.xml
+¦       ¦       ¦       activity_task_detail.xml
+¦       ¦       ¦       dialog_add_goal.xml
+¦       ¦       ¦       dialog_edit_goal.xml
+¦       ¦       ¦       dialog_update_progress.xml
+¦       ¦       ¦       fragment_edit_goal_dialog.xml
+¦       ¦       ¦       fragment_global_goal.xml
+¦       ¦       ¦       fragment_goals_list.xml
+¦       ¦       ¦       fragment_sub_goal.xml
+¦       ¦       ¦       fragment_task_list.xml
+¦       ¦       ¦       item_goal.xml
+¦       ¦       ¦       item_sub_goal.xml
+¦       ¦       ¦       item_task.xml
+¦       ¦       ¦       
+¦       ¦       +---menu
+¦       ¦       ¦       bottom_nav_menu.xml
+¦       ¦       ¦       
+¦       ¦       +---mipmap-anydpi-v26
+¦       ¦       ¦       ic_launcher.xml
+¦       ¦       ¦       ic_launcher_round.xml
+¦       ¦       ¦       
+¦       ¦       +---mipmap-hdpi
+¦       ¦       ¦       ic_launcher.webp
+¦       ¦       ¦       ic_launcher_round.webp
+¦       ¦       ¦       
+¦       ¦       +---mipmap-mdpi
+¦       ¦       ¦       ic_launcher.webp
+¦       ¦       ¦       ic_launcher_round.webp
+¦       ¦       ¦       
+¦       ¦       +---mipmap-xhdpi
+¦       ¦       ¦       ic_launcher.webp
+¦       ¦       ¦       ic_launcher_round.webp
+¦       ¦       ¦       
+¦       ¦       +---mipmap-xxhdpi
+¦       ¦       ¦       ic_launcher.webp
+¦       ¦       ¦       ic_launcher_round.webp
+¦       ¦       ¦       
+¦       ¦       +---mipmap-xxxhdpi
+¦       ¦       ¦       ic_launcher.webp
+¦       ¦       ¦       ic_launcher_round.webp
+¦       ¦       ¦       
+¦       ¦       +---navigation
+¦       ¦       ¦       nav_graph.xml
+¦       ¦       ¦       
+¦       ¦       +---values
+¦       ¦       ¦       colors.xml
+¦       ¦       ¦       strings.xml
+¦       ¦       ¦       styles.xml
+¦       ¦       ¦       themes.xml
+¦       ¦       ¦       
+¦       ¦       +---values-night
+¦       ¦       ¦       themes.xml
+¦       ¦       ¦       
+¦       ¦       L---xml
+¦       ¦               backup_rules.xml
+¦       ¦               data_extraction_rules.xml
+¦       ¦               
+¦       L---test
+¦           L---java
+¦               L---com
+¦                   L---example
+¦                       L---studentdiary
+¦                               ExampleUnitTest.kt
+¦                               
+L---gradle
+    ¦   libs.versions.toml
+    ¦   
+    L---wrapper
+            gradle-wrapper.jar
+            gradle-wrapper.properties
+            
