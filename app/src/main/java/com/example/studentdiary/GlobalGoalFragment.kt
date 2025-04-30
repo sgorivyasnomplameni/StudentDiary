@@ -6,7 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
+import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.github.mikephil.charting.charts.PieChart
@@ -18,7 +19,7 @@ class GlobalGoalFragment : Fragment() {
 
     private lateinit var pieChart: PieChart
     private lateinit var recyclerView: RecyclerView
-    private lateinit var globalGoalViewModel: GlobalGoalViewModel
+    private val globalGoalViewModel: GlobalGoalViewModel by viewModels()
     private lateinit var subGoalAdapter: SubGoalAdapter
 
     override fun onCreateView(
@@ -32,23 +33,19 @@ class GlobalGoalFragment : Fragment() {
         recyclerView = view.findViewById(R.id.subGoalsRecyclerView)
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
 
-        // Инициализация ViewModel
-        globalGoalViewModel = ViewModelProvider(this).get(GlobalGoalViewModel::class.java)
-
         // Инициализация адаптера
         subGoalAdapter = SubGoalAdapter(emptyList()) { subGoal ->
-            // Обработка нажатий на подцели
-            globalGoalViewModel.updateSubGoalProgress(subGoal)
+            // Передаем subGoal в метод onSubGoalClick
+            onSubGoalClick(subGoal)
         }
         recyclerView.adapter = subGoalAdapter
 
-        // Наблюдение за данными глобальной цели
-        globalGoalViewModel.globalGoal.observe(viewLifecycleOwner) { globalGoal ->
-            updatePieChart(globalGoal)
-            subGoalAdapter = SubGoalAdapter(globalGoal.subGoals) { subGoal ->
-                globalGoalViewModel.updateSubGoalProgress(subGoal)
+        // Наблюдение за выбранной глобальной целью
+        globalGoalViewModel.currentGlobalGoal.observe(viewLifecycleOwner) { globalGoal ->
+            if (globalGoal != null) {
+                updatePieChart(globalGoal)
+                subGoalAdapter.updateSubGoals(globalGoal.subGoals)
             }
-            recyclerView.adapter = subGoalAdapter
         }
 
         return view
@@ -72,5 +69,10 @@ class GlobalGoalFragment : Fragment() {
         val pieData = PieData(dataSet)
         pieChart.data = pieData
         pieChart.invalidate() // Обновление диаграммы
+    }
+
+    private fun onSubGoalClick(subGoal: SubGoal) {
+        // Переход на SubGoalFragment может быть обновлен, если требуется передать данные
+        findNavController().navigate(R.id.action_globalGoalFragment_to_subGoalFragment)
     }
 }

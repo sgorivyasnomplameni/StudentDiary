@@ -3,19 +3,19 @@
 
     <!-- Пункт для задач -->
     <item
-        android:id="@+id/menu_tasks"
-        android:icon="@drawable/task"
-        android:title="Задачи" />
+        android:id="@+id/taskListFragment"
+    android:icon="@drawable/task"
+    android:title="Задачи" />
 
     <!-- Пункт для целей -->
     <item
-        android:id="@+id/menu_goals"
-        android:icon="@drawable/goal"
-        android:title="Цели" />
+        android:id="@+id/goalsListFragment"
+    android:icon="@drawable/goal"
+    android:title="Цели" />
 
-    <!-- Новый пункт для календаря -->
+    <!-- Пункт для календаря -->
     <item
-        android:id="@+id/menu_calendar"
-        android:icon="@drawable/calendar"
-        android:title="Календарь" />
+        android:id="@+id/calendarFragment"
+    android:icon="@drawable/calendar"
+    android:title="Календарь" />
 </menu>

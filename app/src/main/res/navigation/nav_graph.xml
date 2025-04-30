@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/goalsListFragment">
+
+    <!-- Список целей -->
+    <fragment
+        android:id="@+id/goalsListFragment"
+        android:name="com.example.studentdiary.GoalsListFragment"
+        android:label="Список целей"
+        tools:layout="@layout/fragment_goals_list">
+        <action
+            android:id="@+id/action_goalsListFragment_to_globalGoalFragment"
+            app:destination="@id/globalGoalFragment" />
+        <action
+            android:id="@+id/action_goalsListFragment_to_taskListFragment"
+            app:destination="@id/taskListFragment" />
+        <action
+            android:id="@+id/action_goalsListFragment_to_calendarFragment"
+            app:destination="@id/calendarFragment" />
+    </fragment>
+
+    <!-- Детальный экран цели -->
+    <fragment
+        android:id="@+id/globalGoalFragment"
+        android:name="com.example.studentdiary.GlobalGoalFragment"
+        android:label="Детальная цель"
+        tools:layout="@layout/fragment_global_goal">
+        <action
+            android:id="@+id/action_globalGoalFragment_to_goalsListFragment"
+            app:destination="@id/goalsListFragment" />
+        <action
+            android:id="@+id/action_globalGoalFragment_to_subGoalFragment"
+            app:destination="@id/subGoalFragment" />
+    </fragment>
+
+    <!-- Фрагмент подцелей -->
+    <fragment
+        android:id="@+id/subGoalFragment"
+        android:name="com.example.studentdiary.SubGoalFragment"
+        android:label="Подцели"
+        tools:layout="@layout/fragment_sub_goal">
+        <action
+            android:id="@+id/action_subGoalFragment_to_globalGoalFragment"
+            app:destination="@id/globalGoalFragment" />
+    </fragment>
+
+    <!-- Список задач -->
+    <fragment
+        android:id="@+id/taskListFragment"
+        android:name="com.example.studentdiary.TaskListFragment"
+        android:label="Список задач"
+        tools:layout="@layout/fragment_task_list">
+        <action
+            android:id="@+id/action_taskListFragment_to_goalsListFragment"
+            app:destination="@id/goalsListFragment" />
+        <action
+            android:id="@+id/action_taskListFragment_to_calendarFragment"
+            app:destination="@id/calendarFragment" />
+    </fragment>
+
+    <!-- Календарь -->
+    <fragment
+        android:id="@+id/calendarFragment"
+        android:name="com.example.studentdiary.CalendarFragment"
+        android:label="Календарь"
+        tools:layout="@layout/fragment_calendar">
+        <action
+            android:id="@+id/action_calendarFragment_to_taskListFragment"
+            app:destination="@id/taskListFragment" />
+        <action
+            android:id="@+id/action_calendarFragment_to_goalsListFragment"
+            app:destination="@id/goalsListFragment" />
+    </fragment>
+</navigation>

@@ -14,7 +14,7 @@ import androidx.recyclerview.widget.RecyclerView
  * @param onSubGoalClick Обработчик события нажатия на элемент подцели.
  */
 class SubGoalAdapter(
-    private val subGoals: List<SubGoal>,
+    private var subGoals: List<SubGoal>,
     private val onSubGoalClick: (SubGoal) -> Unit
 ) : RecyclerView.Adapter<SubGoalAdapter.SubGoalViewHolder>() {
 
@@ -80,4 +80,14 @@ class SubGoalAdapter(
      * @return Количество подцелей в списке.
      */
     override fun getItemCount(): Int = subGoals.size
+
+    /**
+     * Обновляет список подцелей и уведомляет RecyclerView.
+     *
+     * @param newSubGoals Новый список подцелей.
+     */
+    fun updateSubGoals(newSubGoals: List<SubGoal>) {
+        subGoals = newSubGoals
+        notifyDataSetChanged()
+    }
 }

@@ -11,8 +11,8 @@ import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 
 class GoalsAdapter(
-    private val goals: List<GoalEntity>,
-    private val onGoalClick: (GoalEntity) -> Unit // Обработчик нажатий на элемент
+    private val goals: List<GlobalGoal>, // Изменено на GlobalGoal
+    private val onGoalClick: (GlobalGoal) -> Unit // Обработчик нажатий на элемент
 ) : RecyclerView.Adapter<GoalsAdapter.GoalViewHolder>() {
 
     // ViewHolder для хранения ссылок на элементы макета
@@ -34,7 +34,7 @@ class GoalsAdapter(
         val goal = goals[position]
 
         holder.goalName.text = goal.name
-        holder.goalDescription.text = goal.description
+        holder.goalDescription.text = "Описание отсутствует" // GlobalGoal не имеет description
         holder.progressBar.max = goal.targetProgress
         holder.progressBar.progress = goal.currentProgress
         holder.progressText.text = "${goal.currentProgress}/${goal.targetProgress}"
@@ -49,7 +49,7 @@ class GoalsAdapter(
         }
 
         holder.itemView.setOnClickListener {
-            onGoalClick(goal)
+            onGoalClick(goal) // Передаём GlobalGoal
         }
     }
 

@@ -1,8 +1,9 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
-    id("kotlin-kapt") // Для аннотаций в Room или других библиотеках
-    id("com.google.devtools.ksp") version libs.versions.ksp.get() // Для генерации кода (если используется)
+    id("kotlin-kapt")
+    id("com.google.devtools.ksp") version libs.versions.ksp.get()
+    id("androidx.navigation.safeargs.kotlin") // теперь он будет найден
 }
 
 android {
@@ -80,4 +81,8 @@ dependencies {
 
     // MPAndroidChart (для работы с круговыми диаграммами)
     implementation ("com.github.PhilJay:MPAndroidChart:v3.1.0")
+
+    // Navigation (для работы с графом навигации)
+    implementation("androidx.navigation:navigation-fragment-ktx:2.5.3")
+    implementation("androidx.navigation:navigation-ui-ktx:2.5.3")
 }

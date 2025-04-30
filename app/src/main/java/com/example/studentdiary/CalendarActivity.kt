@@ -93,7 +93,7 @@ class CalendarActivity : AppCompatActivity() {
         btnBack.setOnClickListener {
             // Возвращаем результат в MainActivity
             val intent = Intent()
-            intent.putExtra("selectedMenuItem", R.id.menu_goals) // Возвращаемся на экран "Цели"
+            intent.putExtra("selectedMenuItem", R.id.goalsListFragment) // Обновлено на корректный ID
             setResult(RESULT_OK, intent)
             finish()
         }

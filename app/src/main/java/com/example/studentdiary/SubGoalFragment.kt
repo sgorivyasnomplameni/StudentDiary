@@ -8,7 +8,8 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
+import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 
 class SubGoalFragment : Fragment() {
 
@@ -17,9 +18,8 @@ class SubGoalFragment : Fragment() {
     private lateinit var targetProgressText: TextView
     private lateinit var progressInput: EditText
     private lateinit var saveButton: Button
-    private lateinit var globalGoalViewModel: GlobalGoalViewModel
 
-    private var subGoalId: Int = -1
+    private val globalGoalViewModel: GlobalGoalViewModel by viewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -34,17 +34,9 @@ class SubGoalFragment : Fragment() {
         progressInput = view.findViewById(R.id.progressInput)
         saveButton = view.findViewById(R.id.saveButton)
 
-        // Получение ViewModel
-        globalGoalViewModel = ViewModelProvider(requireActivity()).get(GlobalGoalViewModel::class.java)
-
-        // Получение данных подцели через аргументы
-        arguments?.let {
-            subGoalId = it.getInt("subGoalId", -1)
-        }
-
-        // Загрузка данных подцели
-        globalGoalViewModel.globalGoal.observe(viewLifecycleOwner) { globalGoal ->
-            val subGoal = globalGoal.subGoals.find { it.id == subGoalId }
+        // Получение данных подцели через ViewModel
+        globalGoalViewModel.currentGlobalGoal.observe(viewLifecycleOwner) { globalGoal ->
+            val subGoal = globalGoal?.subGoals?.firstOrNull() // Возьмем первую подцель для примера
             subGoal?.let {
                 subGoalName.text = it.name
                 currentProgressText.text = "Прогресс: ${it.currentProgress}/${it.targetProgress}"
@@ -55,15 +47,15 @@ class SubGoalFragment : Fragment() {
         // Обработка нажатия кнопки "Сохранить"
         saveButton.setOnClickListener {
             val newProgress = progressInput.text.toString().toIntOrNull() ?: return@setOnClickListener
-            globalGoalViewModel.globalGoal.value?.let { globalGoal ->
-                val subGoal = globalGoal.subGoals.find { it.id == subGoalId }
+            globalGoalViewModel.currentGlobalGoal.value?.let { globalGoal ->
+                val subGoal = globalGoal.subGoals.firstOrNull() // Возьмем первую подцель для примера
                 subGoal?.let {
                     it.currentProgress = newProgress
                     globalGoalViewModel.updateSubGoalProgress(it)
                 }
             }
             // Возврат к предыдущему экрану
-            parentFragmentManager.popBackStack()
+            findNavController().popBackStack()
         }
 
         return view
