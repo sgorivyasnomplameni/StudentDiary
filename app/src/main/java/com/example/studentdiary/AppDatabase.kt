@@ -3,9 +3,11 @@ package com.example.studentdiary
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import androidx.room.TypeConverters
 import android.content.Context
 
 @Database(entities = [TaskEntity::class, GoalEntity::class], version = 4, exportSchema = false) // Увеличена версия
+@TypeConverters(DateConverters::class) // Подключение конвертеров
 abstract class AppDatabase : RoomDatabase() {
     abstract fun taskDao(): TaskDao
     abstract fun goalDao(): GoalDao

@@ -67,5 +67,5 @@ dependencies {
     implementation (libs.androidx.appcompat)
 
     implementation("androidx.recyclerview:recyclerview:1.2.1")
-    implementation ("androidx.constraintlayout:constraintlayout:2.0.4")
+    implementation ("androidx.constraintlayout:constraintlayout:2.2.1")
 }
