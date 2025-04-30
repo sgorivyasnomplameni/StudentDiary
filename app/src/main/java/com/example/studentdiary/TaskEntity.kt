@@ -12,12 +12,21 @@ data class TaskEntity(
     val title: String,
     val description: String?,
     val dueDate: Long,  // timestamp
-    val deadline: Long  // timestamp
+    val deadline: Long,  // timestamp
+    val reminderTime: Long? = null // Новое поле для времени напоминания
 ) {
 
     fun getFormattedDate(): String {
         val sdf = SimpleDateFormat("dd/MM/yyyy", Locale.getDefault())
         val date = Date(dueDate)
         return sdf.format(date)
+    }
+
+    fun getFormattedReminderTime(): String {
+        return reminderTime?.let {
+            val sdf = SimpleDateFormat("HH:mm dd/MM/yyyy", Locale.getDefault())
+            val date = Date(it)
+            sdf.format(date)
+        } ?: "Напоминание не установлено"
     }
 }

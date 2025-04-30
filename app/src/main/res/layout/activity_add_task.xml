@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!-- Добавляем поле для названия задачи -->
+    <!-- Поле для названия задачи -->
     <EditText
         android:id="@+id/editTextTaskTitle"
         android:layout_width="0dp"
@@ -16,6 +16,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:padding="16dp"/>
 
+    <!-- Поле для описания задачи -->
     <EditText
         android:id="@+id/editTextTaskDescription"
         android:layout_width="0dp"
@@ -26,6 +27,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:padding="16dp"/>
 
+    <!-- Выбор даты дедлайна -->
     <DatePicker
         android:id="@+id/datePickerDeadline"
         android:layout_width="wrap_content"
@@ -35,12 +37,24 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="16dp"/>
 
+    <!-- Кнопка для установки времени напоминания -->
+    <Button
+        android:id="@+id/btnSetReminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Установить напоминание"
+        app:layout_constraintTop_toBottomOf="@id/datePickerDeadline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Кнопка для сохранения задачи -->
     <Button
         android:id="@+id/btnSaveTask"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Сохранить задачу"
-        app:layout_constraintTop_toBottomOf="@id/datePickerDeadline"
+        app:layout_constraintTop_toBottomOf="@id/btnSetReminder"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="16dp"/>

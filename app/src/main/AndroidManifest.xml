@@ -17,7 +17,7 @@
             android:exported="false" />
 
         <activity android:name=".AddTaskActivity" />
-
+        <receiver android:name=".ReminderBroadcastReceiver" />
         <activity android:name=".TaskDetailActivity"></activity>
 
         <activity
