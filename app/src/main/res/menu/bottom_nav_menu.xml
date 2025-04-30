@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+
     <!-- Пункт для задач -->
     <item
         android:id="@+id/menu_tasks"
         android:icon="@drawable/task"
-    android:title="Задачи" />
+        android:title="Задачи" />
 
     <!-- Пункт для целей -->
     <item
         android:id="@+id/menu_goals"
         android:icon="@drawable/goal"
-    android:title="Цели" />
+        android:title="Цели" />
+
+    <!-- Новый пункт для календаря -->
+    <item
+        android:id="@+id/menu_calendar"
+        android:icon="@drawable/calendar"
+        android:title="Календарь" />
 </menu>

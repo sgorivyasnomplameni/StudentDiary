@@ -7,14 +7,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!-- Календарь (оставляем как было) -->
+    <!-- Календарь -->
     <CalendarView
         android:id="@+id/calendarView"
         style="@style/CalendarViewStyle"
         android:layout_width="match_parent"
         android:layout_height="300dp"
-        android:theme="@style/CalendarViewStyle"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp" />
 
     <!-- Заголовок для списка задач -->
     <TextView
@@ -27,9 +27,9 @@
         app:layout_constraintTop_toBottomOf="@id/calendarView"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"/>
+        android:layout_marginTop="16dp" />
 
-    <!-- RecyclerView для отображения задач -->
+    <!-- RecyclerView для задач -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvTasks"
         android:layout_width="match_parent"
@@ -39,9 +39,9 @@
         app:layout_constraintBottom_toTopOf="@id/btnBack"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:listitem="@layout/item_task"/>
+        tools:listitem="@layout/item_task" />
 
-    <!-- Кнопка "Назад" (поднимаем выше) -->
+    <!-- Кнопка "Назад" -->
     <Button
         android:id="@+id/btnBack"
         android:layout_width="wrap_content"
@@ -50,6 +50,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginBottom="16dp"/>
+        android:layout_marginBottom="16dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
