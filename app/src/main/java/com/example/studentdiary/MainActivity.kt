@@ -1,6 +1,7 @@
 package com.example.studentdiary
 
 import android.os.Bundle
+import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.activity.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -47,9 +48,13 @@ class MainActivity : AppCompatActivity() {
 
         // Добавляем обработчик кликов для элементов списка
         taskAdapter.setOnItemClickListener { task ->
+            // Логируем информацию о задаче
+            Log.d("MainActivity", "Task clicked: ID = ${task.id}, Title = ${task.title}")
+
             // Открываем TaskDetailActivity при клике на задачу
             val intent = Intent(this, TaskDetailActivity::class.java)
-            intent.putExtra("TASK_ID", task.id) // Передаем ID задачи
+            intent.putExtra("TASK_ID", task.id.toLong()) // Передаем ID задачи
+            Log.d("MainActivity", "Launching TaskDetailActivity with Task ID: ${task.id}")
             startActivity(intent)
         }
 
