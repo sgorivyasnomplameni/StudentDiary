@@ -23,8 +23,8 @@ class TaskDetailActivity : AppCompatActivity() {
         deleteButton.setOnClickListener {
             if (taskId != -1L) {
                 val taskToDelete = TaskEntity(
-                    id = taskId,
-                    title = "",         // пофиг, важен только id для удаления
+                    id = taskId.toInt(),  // Приведение Long к Int
+                    title = "",           // пофиг, важен только id для удаления
                     description = null,
                     dueDate = 0L,
                     deadline = 0L

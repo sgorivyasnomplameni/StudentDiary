@@ -11,26 +11,46 @@ class TaskViewModel(application: Application) : AndroidViewModel(application) {
     private val taskDao = AppDatabase.getDatabase(application).taskDao()  // Получение DAO из базы данных
     private val taskRepository = TaskRepository(taskDao)  // Репозиторий для работы с DAO
 
-    // Функция для добавления задачи
+    // Добавление задачи
     fun addTask(task: TaskEntity) {
         viewModelScope.launch {
-            taskRepository.insert(task)  // Вставка задачи в базу данных
+            taskRepository.insert(task)
         }
     }
 
-    fun getTasksByDate(startOfDay: Long, endOfDay: Long): LiveData<List<TaskEntity>> {
-        return taskRepository.getTasksByDate(startOfDay, endOfDay).asLiveData()
-    }
-
-    // Функция для получения всех задач, преобразованных в LiveData
+    // Получение всех задач
     fun getAllTasks(): LiveData<List<TaskEntity>> {
-        return taskRepository.getAllTasks().asLiveData()  // Преобразование Flow в LiveData
+        return taskRepository.getAllTasks().asLiveData()
     }
 
+    // Удаление задачи
     fun deleteTask(task: TaskEntity) {
         viewModelScope.launch {
             taskRepository.delete(task)
         }
     }
 
+    // Получение задач по дате
+    fun getTasksByDate(startOfDay: Long, endOfDay: Long): LiveData<List<TaskEntity>> {
+        return taskRepository.getTasksByDate(startOfDay, endOfDay).asLiveData()
+    }
+
+    // Получение задач с напоминаниями
+    fun getTasksWithReminders(): LiveData<List<TaskEntity>> {
+        return taskRepository.getTasksWithReminders().asLiveData()
+    }
+
+    // Обновление времени напоминания
+    fun updateReminder(taskId: Int, reminderTime: Long?) {
+        viewModelScope.launch {
+            taskRepository.updateReminder(taskId, reminderTime)
+        }
+    }
+
+    // Удаление времени напоминания
+    fun deleteReminder(taskId: Int) {
+        viewModelScope.launch {
+            taskRepository.deleteReminder(taskId)
+        }
+    }
 }

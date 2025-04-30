@@ -14,12 +14,28 @@ class TaskRepository(private val taskDao: TaskDao) {
         return taskDao.getAllTasks()
     }
 
+    // Удаление задачи
     suspend fun delete(task: TaskEntity) {
         taskDao.delete(task)
     }
 
+    // Получение задач по дате
     fun getTasksByDate(startOfDay: Long, endOfDay: Long): Flow<List<TaskEntity>> {
         return taskDao.getTasksByDate(startOfDay, endOfDay)
     }
 
+    // Получение задач с напоминаниями
+    fun getTasksWithReminders(): Flow<List<TaskEntity>> {
+        return taskDao.getTasksWithReminders()
+    }
+
+    // Обновление времени напоминания
+    suspend fun updateReminder(taskId: Int, reminderTime: Long?) {
+        taskDao.updateReminder(taskId, reminderTime)
+    }
+
+    // Удаление времени напоминания
+    suspend fun deleteReminder(taskId: Int) {
+        taskDao.deleteReminder(taskId)
+    }
 }

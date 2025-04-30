@@ -8,7 +8,7 @@ import androidx.room.PrimaryKey
 @Entity(tableName = "tasks")
 data class TaskEntity(
     @PrimaryKey(autoGenerate = true)
-    val id: Long = 0,
+    val id: Int = 0, // Изменено с Long на Int
     val title: String,
     val description: String?,
     val dueDate: Long,  // timestamp

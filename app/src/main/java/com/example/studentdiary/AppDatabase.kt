@@ -21,7 +21,6 @@ abstract class AppDatabase : RoomDatabase() {
                     "student_diary_database"
                 )
                     .addMigrations(MIGRATION_1_2, MIGRATION_2_3) // Добавлены миграции
-                    .fallbackToDestructiveMigration()
                     .build()
                 INSTANCE = instance
                 instance

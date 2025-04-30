@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Основной цвет -->
     <color name="colorPrimary">#3F51B5</color>
@@ -9,4 +8,11 @@
     <!-- Дополнительные цвета для календаря -->
     <color name="calendar_date_highlight">#FF4081</color>
     <color name="calendar_weekday_text">#757575</color>
+
+    <!-- Черный цвет -->
+    <color name="black">#000000</color>
+
+    <!-- Недостающие цвета -->
+    <color name="teal_700">#018786</color>
+    <color name="white">#FFFFFF</color>
 </resources>

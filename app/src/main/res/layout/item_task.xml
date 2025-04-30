@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -11,7 +10,7 @@
 
     <TextView
         android:id="@+id/taskTitle"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Название задачи"
         android:textSize="18sp"
@@ -19,17 +18,19 @@
         android:textColor="#222222"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/reminderIndicator"
         android:layout_marginBottom="4dp" />
 
     <TextView
         android:id="@+id/taskDescription"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Описание задачи"
         android:textSize="14sp"
         android:textColor="#666666"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/taskTitle"
+        app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginBottom="8dp" />
 
     <TextView
@@ -42,5 +43,17 @@
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/taskDescription" />
+
+    <!-- Индикатор напоминания -->
+    <ImageView
+        android:id="@+id/reminderIndicator"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/alarm"
+    android:contentDescription="@string/reminder_indicator"
+    android:layout_marginStart="8dp"
+    android:visibility="gone"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

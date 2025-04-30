@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">StudentDiary</string>
+    <string name="reminder_indicator">Напоминание</string>
 </resources>

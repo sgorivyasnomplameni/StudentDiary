@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.widget.TextView
 import com.example.studentdiary.R
+import android.widget.ImageView
 
 class TaskAdapter(private var tasks: List<TaskEntity>) : RecyclerView.Adapter<TaskAdapter.TaskViewHolder>() {
 
@@ -41,11 +42,19 @@ class TaskAdapter(private var tasks: List<TaskEntity>) : RecyclerView.Adapter<Ta
         val taskTitle: TextView = itemView.findViewById(R.id.taskTitle)
         val taskDescription: TextView = itemView.findViewById(R.id.taskDescription)
         val taskDueDate: TextView = itemView.findViewById(R.id.taskDueDate)
+        val reminderIndicator: ImageView = itemView.findViewById(R.id.reminderIndicator)
 
         fun bind(task: TaskEntity) {
             taskTitle.text = task.title
             taskDescription.text = task.description ?: ""
             taskDueDate.text = task.getFormattedDate()
+
+            // Отображаем индикатор напоминания, если reminderTime установлен
+            if (task.reminderTime != null) {
+                reminderIndicator.visibility = View.VISIBLE
+            } else {
+                reminderIndicator.visibility = View.GONE
+            }
         }
     }
 }

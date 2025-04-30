@@ -7,10 +7,12 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import android.widget.Button
 import android.content.Intent
+import android.widget.EditText
+import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.core.view.WindowCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.studentdiary.TaskAdapter
 
 class MainActivity : AppCompatActivity() {
 
@@ -32,7 +34,7 @@ class MainActivity : AppCompatActivity() {
         // Инициализация RecyclerView
         val recyclerView: RecyclerView = findViewById(R.id.recyclerView)
         recyclerView.layoutManager = LinearLayoutManager(this)
-        taskAdapter = TaskAdapter(emptyList())  // Создание адаптера с пустым списком задач
+        taskAdapter = TaskAdapter(emptyList())
         recyclerView.adapter = taskAdapter
 
         // Наблюдение за задачами и обновление адаптера
@@ -42,12 +44,7 @@ class MainActivity : AppCompatActivity() {
 
         // Добавляем обработчик кликов для элементов списка
         taskAdapter.setOnItemClickListener { task ->
-            // Печатаем ID задачи для отладки
-            println("ID задачи: ${task.id}")
-            // Переход к экрану с деталями задачи
-            val intent = Intent(this, TaskDetailActivity::class.java)
-            intent.putExtra("TASK_ID", task.id)  // Передаем ID задачи
-            startActivity(intent)
+            showReminderDialog(task)
         }
 
         // Кнопка для открытия календаря
@@ -63,5 +60,44 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, AddTaskActivity::class.java)
             startActivity(intent)
         }
+
+        // Кнопка для фильтрации задач с напоминаниями
+        val btnFilterReminders = findViewById<Button>(R.id.btnFilterReminders)
+        btnFilterReminders.setOnClickListener {
+            taskViewModel.getTasksWithReminders().observe(this, { tasks ->
+                taskAdapter.updateTasks(tasks)
+            })
+        }
+    }
+
+    private fun showReminderDialog(task: TaskEntity) {
+        val dialog = AlertDialog.Builder(this)
+        dialog.setTitle("Управление напоминанием")
+
+        val input = EditText(this)
+        input.hint = "Введите время напоминания (в миллисекундах)"
+        input.inputType = android.text.InputType.TYPE_CLASS_NUMBER
+        input.setText(task.reminderTime?.toString() ?: "")
+
+        dialog.setView(input)
+
+        dialog.setPositiveButton("Обновить") { _, _ ->
+            val newReminderTime = input.text.toString().toLongOrNull()
+            if (newReminderTime != null) {
+                taskViewModel.updateReminder(task.id, newReminderTime)
+                Toast.makeText(this, "Напоминание обновлено", Toast.LENGTH_SHORT).show()
+            } else {
+                Toast.makeText(this, "Некорректное время", Toast.LENGTH_SHORT).show()
+            }
+        }
+
+        dialog.setNegativeButton("Удалить") { _, _ ->
+            taskViewModel.deleteReminder(task.id)
+            Toast.makeText(this, "Напоминание удалено", Toast.LENGTH_SHORT).show()
+        }
+
+        dialog.setNeutralButton("Отмена", null)
+
+        dialog.show()
     }
 }
