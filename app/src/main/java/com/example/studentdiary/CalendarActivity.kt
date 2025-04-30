@@ -14,9 +14,9 @@ import java.util.*
 class CalendarActivity : AppCompatActivity() {
     private val taskViewModel: TaskViewModel by viewModels()
     private lateinit var taskAdapter: TaskAdapter
+    private lateinit var calendarDecorator: CalendarDecorator
 
     override fun onCreate(savedInstanceState: Bundle?) {
-
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_calendar)
 
@@ -29,10 +29,17 @@ class CalendarActivity : AppCompatActivity() {
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.adapter = taskAdapter
 
+        // Получение дат с напоминаниями
+        taskViewModel.getTasksWithReminders().observe(this) { tasks ->
+            val reminderDates = tasks.map { it.dueDate }
+            calendarDecorator = CalendarDecorator(this, calendarView, reminderDates)
+            calendarDecorator.invalidate() // Перерисовать индикаторы
+        }
+
         // Обработчик выбора даты в календаре
-        calendarView.setOnDateChangeListener { _, year, month, day ->
+        calendarView.setOnDateChangeListener { _, year, month, dayOfMonth ->
             val calendar = Calendar.getInstance().apply {
-                set(year, month, day)
+                set(year, month, dayOfMonth)
                 set(Calendar.HOUR_OF_DAY, 0)
                 set(Calendar.MINUTE, 0)
                 set(Calendar.SECOND, 0)

@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
 
     private val taskViewModel: TaskViewModel by viewModels()
     private lateinit var taskAdapter: TaskAdapter
+    private var isFiltered = false // Переменная для отслеживания состояния фильтрации
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -39,12 +40,17 @@ class MainActivity : AppCompatActivity() {
 
         // Наблюдение за задачами и обновление адаптера
         taskViewModel.getAllTasks().observe(this, { tasks ->
-            taskAdapter.updateTasks(tasks)
+            if (!isFiltered) { // Обновляем только если режим не фильтрации
+                taskAdapter.updateTasks(tasks)
+            }
         })
 
         // Добавляем обработчик кликов для элементов списка
         taskAdapter.setOnItemClickListener { task ->
-            showReminderDialog(task)
+            // Открываем TaskDetailActivity при клике на задачу
+            val intent = Intent(this, TaskDetailActivity::class.java)
+            intent.putExtra("TASK_ID", task.id) // Передаем ID задачи
+            startActivity(intent)
         }
 
         // Кнопка для открытия календаря
@@ -64,9 +70,21 @@ class MainActivity : AppCompatActivity() {
         // Кнопка для фильтрации задач с напоминаниями
         val btnFilterReminders = findViewById<Button>(R.id.btnFilterReminders)
         btnFilterReminders.setOnClickListener {
-            taskViewModel.getTasksWithReminders().observe(this, { tasks ->
-                taskAdapter.updateTasks(tasks)
-            })
+            isFiltered = !isFiltered // Переключаем состояние фильтрации
+
+            if (isFiltered) {
+                // Отображаем только задачи с напоминаниями
+                taskViewModel.getTasksWithReminders().observe(this, { tasks ->
+                    taskAdapter.updateTasks(tasks)
+                })
+                btnFilterReminders.text = "Показать все задачи" // Меняем текст кнопки
+            } else {
+                // Отображаем все задачи
+                taskViewModel.getAllTasks().observe(this, { tasks ->
+                    taskAdapter.updateTasks(tasks)
+                })
+                btnFilterReminders.text = "Фильтровать по напоминаниям" // Меняем текст кнопки
+            }
         }
     }
 
