@@ -10,13 +10,14 @@ import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
-import kotlinx.coroutines.flow.collect
+import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
 
 class GoalsListFragment : Fragment() {
 
+    // Инициализация ViewModel с использованием фабрики
     private val goalsViewModel: GoalsViewModel by viewModels {
-        GoalsViewModelFactory((requireActivity().application as StudentDiaryApp).goalDao)
+        GoalsViewModelFactory((requireActivity().application as StudentDiaryApp).database.goalDao())
     }
 
     override fun onCreateView(
@@ -25,6 +26,7 @@ class GoalsListFragment : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_goals_list, container, false)
 
+        // Настройка RecyclerView
         val recyclerView = view.findViewById<RecyclerView>(R.id.goalsRecyclerView)
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
 
@@ -34,9 +36,9 @@ class GoalsListFragment : Fragment() {
             showAddGoalDialog()
         }
 
-        // Наблюдаем за потоком данных из ViewModel
+        // Наблюдение за обновлением списка целей
         lifecycleScope.launch {
-            goalsViewModel.allGoals.collect { goals ->
+            goalsViewModel.allGoals.collectLatest { goals ->
                 recyclerView.adapter = GoalsAdapter(goals) { goal ->
                     onGoalClick(goal)
                 }

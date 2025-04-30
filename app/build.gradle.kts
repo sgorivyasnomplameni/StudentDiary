@@ -68,4 +68,6 @@ dependencies {
 
     implementation("androidx.recyclerview:recyclerview:1.2.1")
     implementation ("androidx.constraintlayout:constraintlayout:2.2.1")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1")
+    implementation("androidx.fragment:fragment-ktx:1.5.7")
 }
