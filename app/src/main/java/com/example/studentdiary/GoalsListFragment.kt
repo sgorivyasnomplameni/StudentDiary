@@ -65,10 +65,25 @@ class GoalsListFragment : Fragment() {
     private fun showEditGoalDialog(goal: GoalEntity) {
         val dialog = EditGoalDialogFragment(goal) { updatedGoal, action ->
             when (action) {
-                "update" -> goalsViewModel.updateGoal(updatedGoal)
-                "delete" -> goalsViewModel.deleteGoal(goal)
+                "update" -> {
+                    goalsViewModel.updateGoal(updatedGoal)
+                }
+                "delete" -> {
+                    goalsViewModel.deleteGoal(goal)
+                }
+                "progress" -> {
+                    showUpdateProgressDialog(updatedGoal)
+                }
             }
         }
         dialog.show(parentFragmentManager, "EditGoalDialog")
+    }
+
+    // Открытие диалога для обновления прогресса цели
+    private fun showUpdateProgressDialog(goal: GoalEntity) {
+        val dialog = UpdateProgressDialogFragment(goal) { updatedGoal ->
+            goalsViewModel.updateGoal(updatedGoal)
+        }
+        dialog.show(parentFragmentManager, "UpdateProgressDialog")
     }
 }

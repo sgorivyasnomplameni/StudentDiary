@@ -1,11 +1,29 @@
 <resources>
+    <!-- Название приложения -->
     <string name="app_name">StudentDiary</string>
+
+    <!-- Общие действия -->
+    <string name="add">Добавить</string>
+    <string name="cancel">Отмена</string>
+    <string name="update">Обновить</string>
+    <string name="delete">Удалить</string>
+
+    <!-- Цели -->
+    <string name="goal_name">Имя цели</string>
+    <string name="goal_description">Описание цели</string>
+    <string name="current_progress">Текущий прогресс</string>
+    <string name="target_progress">Целевой прогресс</string>
+    <string name="add_goal">Добавить цель</string>
+    <string name="update_goal">Обновить цель</string>
+    <string name="delete_goal">Удалить цель</string>
+
+    <!-- Напоминания и задачи -->
     <string name="reminder_indicator">Напоминание</string>
     <string name="task_completed">Задача выполнена</string>
-    <string name="goal_name">Goal Name</string>
-    <string name="goal_description">Goal Description</string>
-    <string name="add_goal">Add Goal</string>
-    <string name="cancel">Cancel</string>
-    <string name="update_goal">Update Goal</string>
-    <string name="delete_goal">Delete Goal</string>
+
+    <!-- Ошибки -->
+    <string name="error_fields_empty">Поля имени и описания не могут быть пустыми</string>
+    <string name="error_progress_not_number">Прогресс должен быть числом</string>
+    <string name="error_target_progress_positive">Целевой прогресс должен быть больше 0</string>
+    <string name="error_current_exceeds_target">Текущий прогресс не может превышать целевой прогресс</string>
 </resources>

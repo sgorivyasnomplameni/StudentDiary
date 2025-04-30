@@ -1,10 +1,13 @@
 package com.example.studentdiary
 
+import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.ProgressBar
 import android.widget.TextView
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 
 class GoalsAdapter(
@@ -17,6 +20,8 @@ class GoalsAdapter(
         val goalName: TextView = itemView.findViewById(R.id.goalName)
         val goalDescription: TextView = itemView.findViewById(R.id.goalDescription)
         val progressBar: ProgressBar = itemView.findViewById(R.id.progressBar)
+        val progressText: TextView = itemView.findViewById(R.id.progressText) // Текст для отображения прогресса
+        val completedIcon: ImageView = itemView.findViewById(R.id.completedIcon) // Иконка завершения
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): GoalViewHolder {
@@ -32,6 +37,16 @@ class GoalsAdapter(
         holder.goalDescription.text = goal.description
         holder.progressBar.max = goal.targetProgress
         holder.progressBar.progress = goal.currentProgress
+        holder.progressText.text = "${goal.currentProgress}/${goal.targetProgress}"
+
+        // Проверяем, завершена ли цель
+        if (goal.currentProgress >= goal.targetProgress) {
+            holder.completedIcon.visibility = View.VISIBLE
+            holder.itemView.setBackgroundColor(ContextCompat.getColor(holder.itemView.context, R.color.completed_goal_background))
+        } else {
+            holder.completedIcon.visibility = View.GONE
+            holder.itemView.setBackgroundColor(Color.TRANSPARENT)
+        }
 
         holder.itemView.setOnClickListener {
             onGoalClick(goal)

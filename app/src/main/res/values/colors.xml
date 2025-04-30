@@ -15,4 +15,6 @@
     <!-- Недостающие цвета -->
     <color name="teal_700">#018786</color>
     <color name="white">#FFFFFF</color>
+
+    <color name="completed_goal_background">#FFEB3B</color>
 </resources>
