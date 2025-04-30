@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
     private fun setInitialFragment() {
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
         bottomNavigationView.selectedItemId = R.id.menu_goals // Устанавливаем "Цели" как выбранный пункт
-        loadFragment(GoalsListFragment()) // Загружаем фрагмент "Цели"
+        loadFragment(GlobalGoalFragment()) // Загружаем фрагмент "Глобальная цель"
     }
 
     /**
@@ -46,7 +46,7 @@ class MainActivity : AppCompatActivity() {
                     true
                 }
                 R.id.menu_goals -> {
-                    loadFragment(GoalsListFragment()) // Переход на экран "Цели"
+                    loadFragment(GlobalGoalFragment()) // Переход на экран "Глобальная цель"
                     true
                 }
                 R.id.menu_calendar -> {
@@ -88,7 +88,7 @@ class MainActivity : AppCompatActivity() {
             // Синхронизируем выбранный пункт с фрагментом
             when (selectedMenuItem) {
                 R.id.menu_tasks -> loadFragment(TaskListFragment())
-                R.id.menu_goals -> loadFragment(GoalsListFragment())
+                R.id.menu_goals -> loadFragment(GlobalGoalFragment())
             }
         }
     }
