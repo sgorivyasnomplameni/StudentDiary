@@ -1,11 +1,12 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
-    id("kotlin-kapt")
-    id("com.google.devtools.ksp") version libs.versions.ksp.get()
+    id("kotlin-kapt") // Для аннотаций в Room или других библиотеках
+    id("com.google.devtools.ksp") version libs.versions.ksp.get() // Для генерации кода (если используется)
 }
 
 android {
+    // Основные настройки приложения
     namespace = "com.example.studentdiary"
     compileSdk = 35
 
@@ -21,13 +22,15 @@ android {
 
     buildTypes {
         release {
-            isMinifyEnabled = false
+            isMinifyEnabled = false // Минификация кода отключена для релизной сборки
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
         }
     }
+
+    // Настройки совместимости Java и Kotlin
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
@@ -38,36 +41,43 @@ android {
 }
 
 dependencies {
+    // Основные библиотеки Android
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+
+    // Тестирование
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
-    // Room
+    // Room (для работы с базой данных)
     implementation(libs.androidx.room.runtime)
     implementation(libs.androidx.room.ktx)
     kapt(libs.androidx.room.compiler)
 
-    // Coroutines
+    // Coroutines (для работы с асинхронным кодом)
     implementation(libs.kotlinx.coroutines.core)
     implementation(libs.kotlinx.coroutines.android)
 
-    // Lifecycle
+    // Lifecycle (для ViewModel, LiveData)
     implementation(libs.androidx.lifecycle.livedata.ktx)
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
 
-    // For WindowInsetsCompat
+    // Работа с окнами и их элементами
     implementation(libs.androidx.window)
-    implementation(libs.androidx.core)
 
-    implementation (libs.androidx.appcompat)
-
+    // RecyclerView
     implementation("androidx.recyclerview:recyclerview:1.2.1")
-    implementation ("androidx.constraintlayout:constraintlayout:2.2.1")
-    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1")
+
+    // ConstraintLayout
+    implementation("androidx.constraintlayout:constraintlayout:2.2.1")
+
+    // Fragment (для работы с фрагментами)
     implementation("androidx.fragment:fragment-ktx:1.5.7")
+
+    // MPAndroidChart (для работы с круговыми диаграммами)
+    implementation ("com.github.PhilJay:MPAndroidChart:v3.1.0")
 }
