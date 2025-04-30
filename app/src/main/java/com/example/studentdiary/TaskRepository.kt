@@ -38,4 +38,9 @@ class TaskRepository(private val taskDao: TaskDao) {
     suspend fun deleteReminder(taskId: Int) {
         taskDao.deleteReminder(taskId)
     }
+
+    // Обновление статуса выполнения задачи
+    suspend fun updateTaskCompletion(taskId: Int, isCompleted: Boolean) {
+        taskDao.updateTaskCompletion(taskId, isCompleted)
+    }
 }

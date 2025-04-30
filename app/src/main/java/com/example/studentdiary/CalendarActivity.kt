@@ -25,7 +25,9 @@ class CalendarActivity : AppCompatActivity() {
         val recyclerView = findViewById<RecyclerView>(R.id.rvTasks)
 
         // Настройка RecyclerView
-        taskAdapter = TaskAdapter(emptyList())
+        taskAdapter = TaskAdapter(emptyList()) { _, _ ->
+            // Пустой callback, так как изменение статуса выполнения задач здесь не требуется
+        }
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.adapter = taskAdapter
 

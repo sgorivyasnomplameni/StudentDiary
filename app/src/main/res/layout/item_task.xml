@@ -8,6 +8,18 @@
     android:elevation="4dp"
     android:layout_marginBottom="8dp">
 
+    <!-- CheckBox для отметки выполнения задачи -->
+    <CheckBox
+        android:id="@+id/checkboxCompleted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="4dp"
+        android:checked="false"
+        android:contentDescription="@string/task_completed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/taskTitle"
         android:layout_width="0dp"
@@ -16,7 +28,7 @@
         android:textSize="18sp"
         android:textStyle="bold"
         android:textColor="#222222"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@id/checkboxCompleted"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toStartOf="@id/reminderIndicator"
         android:layout_marginBottom="4dp" />
@@ -28,7 +40,7 @@
         android:text="Описание задачи"
         android:textSize="14sp"
         android:textColor="#666666"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@id/taskTitle"
         app:layout_constraintTop_toBottomOf="@id/taskTitle"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginBottom="8dp" />
@@ -50,10 +62,10 @@
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:src="@drawable/alarm"
-    android:contentDescription="@string/reminder_indicator"
-    android:layout_marginStart="8dp"
-    android:visibility="gone"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintTop_toTopOf="parent" />
+        android:contentDescription="@string/reminder_indicator"
+        android:layout_marginStart="8dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

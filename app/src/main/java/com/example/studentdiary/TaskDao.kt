@@ -40,4 +40,8 @@ interface TaskDao {
     // Удаление времени напоминания
     @Query("UPDATE tasks SET reminderTime = NULL WHERE id = :taskId")
     suspend fun deleteReminder(taskId: Int)
+
+    // Обновление статуса выполнения задачи
+    @Query("UPDATE tasks SET completed = :isCompleted WHERE id = :taskId")
+    suspend fun updateTaskCompletion(taskId: Int, isCompleted: Boolean)
 }

@@ -8,12 +8,13 @@ import androidx.room.PrimaryKey
 @Entity(tableName = "tasks")
 data class TaskEntity(
     @PrimaryKey(autoGenerate = true)
-    val id: Int = 0, // Изменено с Long на Int
+    val id: Int = 0,
     val title: String,
     val description: String?,
     val dueDate: Long,  // timestamp
     val deadline: Long,  // timestamp
-    val reminderTime: Long? = null // Новое поле для времени напоминания
+    val reminderTime: Long? = null, // Время напоминания
+    val completed: Boolean = false // Новое поле для статуса выполнения задачи
 ) {
 
     fun getFormattedDate(): String {

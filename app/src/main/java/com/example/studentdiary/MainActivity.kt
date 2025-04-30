@@ -36,7 +36,10 @@ class MainActivity : AppCompatActivity() {
         // Инициализация RecyclerView
         val recyclerView: RecyclerView = findViewById(R.id.recyclerView)
         recyclerView.layoutManager = LinearLayoutManager(this)
-        taskAdapter = TaskAdapter(emptyList())
+        taskAdapter = TaskAdapter(emptyList()) { task, isCompleted ->
+            // Обновляем статус выполнения задачи
+            taskViewModel.updateTaskCompletion(task.id, isCompleted)
+        }
         recyclerView.adapter = taskAdapter
 
         // Наблюдение за задачами и обновление адаптера

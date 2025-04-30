@@ -53,4 +53,11 @@ class TaskViewModel(application: Application) : AndroidViewModel(application) {
             taskRepository.deleteReminder(taskId)
         }
     }
+
+    // Обновление статуса выполнения задачи
+    fun updateTaskCompletion(taskId: Int, isCompleted: Boolean) {
+        viewModelScope.launch {
+            taskRepository.updateTaskCompletion(taskId, isCompleted)
+        }
+    }
 }

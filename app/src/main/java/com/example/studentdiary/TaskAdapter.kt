@@ -5,10 +5,13 @@ import android.view.ViewGroup
 import android.view.LayoutInflater
 import android.view.View
 import android.widget.TextView
-import com.example.studentdiary.R
+import android.widget.CheckBox
 import android.widget.ImageView
 
-class TaskAdapter(private var tasks: List<TaskEntity>) : RecyclerView.Adapter<TaskAdapter.TaskViewHolder>() {
+class TaskAdapter(
+    private var tasks: List<TaskEntity>,
+    private val onTaskCompletionChanged: (TaskEntity, Boolean) -> Unit // Новый callback для изменения статуса выполнения
+) : RecyclerView.Adapter<TaskAdapter.TaskViewHolder>() {
 
     private var onItemClickListener: ((TaskEntity) -> Unit)? = null
 
@@ -25,8 +28,17 @@ class TaskAdapter(private var tasks: List<TaskEntity>) : RecyclerView.Adapter<Ta
     override fun onBindViewHolder(holder: TaskViewHolder, position: Int) {
         val task = tasks[position]
         holder.bind(task)
+
+        // Обработка клика на весь элемент
         holder.itemView.setOnClickListener {
-            onItemClickListener?.invoke(task)  // передаем задачу, когда на нее нажали
+            onItemClickListener?.invoke(task)
+        }
+
+        // Обработка изменения состояния CheckBox
+        holder.taskCompletedCheckbox.setOnCheckedChangeListener(null) // Убираем ранее установленный listener
+        holder.taskCompletedCheckbox.isChecked = task.completed
+        holder.taskCompletedCheckbox.setOnCheckedChangeListener { _, isChecked ->
+            onTaskCompletionChanged(task, isChecked) // Вызываем callback при изменении состояния CheckBox
         }
     }
 
@@ -43,6 +55,7 @@ class TaskAdapter(private var tasks: List<TaskEntity>) : RecyclerView.Adapter<Ta
         val taskDescription: TextView = itemView.findViewById(R.id.taskDescription)
         val taskDueDate: TextView = itemView.findViewById(R.id.taskDueDate)
         val reminderIndicator: ImageView = itemView.findViewById(R.id.reminderIndicator)
+        val taskCompletedCheckbox: CheckBox = itemView.findViewById(R.id.checkboxCompleted) // Новый элемент
 
         fun bind(task: TaskEntity) {
             taskTitle.text = task.title
@@ -58,4 +71,3 @@ class TaskAdapter(private var tasks: List<TaskEntity>) : RecyclerView.Adapter<Ta
         }
     }
 }
-
